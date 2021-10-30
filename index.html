@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">My Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#close"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="close">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="aboutMe.html">About Me</a>
+                    <a class="nav-link" href="#recent-projects">Work</a>
+                    <a class="nav-link" href="skills.html">My Skills</a>
+                    <a class="nav-link" href="#contact-me">Contact Me</a>
+
+                </div>
+            </div>
+    </nav>
+
+    <!-- Main Title-->
+    <section class="container-fluid">
+        <div class="row">
+            <p class="background-text">&lt;html lang="en"&gt;</p>
+            <p class="background-text body-text">&lt;body&gt;</p>
+            <div class="col-12" id="mainHeader">
+                <div class="col">
+                    <p class="background-text">&lt;h1&gt;</p>
+                    <h1 class="white"><span class="in-line nameAnimation">H</span><span
+                            class="in-line nameAnimation">e</span><span class="in-line nameAnimation">l</span><span
+                            class="in-line nameAnimation">l</span><span class="in-line nameAnimation">o</span><span
+                            class="in-line nameAnimation">-</span><span class="in-line nameAnimation">H</span><span
+                            class="in-line nameAnimation">e</span><span class="in-line nameAnimation">l</span><span
+                            class="in-line nameAnimation">l</span><span class="in-line nameAnimation">o</span><span
+                            class="in-line nameAnimation">!</span>
+                    </h1>
+                </div>
+                <div class="col">
+                    <h1 class="white">
+                        <span class="in-line nameAnimation">I'</span><span class="in-line nameAnimation">m,</span> <span
+                            class="in-line nameAnimation">L</span><span class="in-line nameAnimation">u</span><span
+                            class="in-line nameAnimation">k</span><span class="in-line nameAnimation">e</span>
+                    </h1>
+                </div>
+                <div class="col">
+                    <h2 id="web-dev" class="white">
+                        Web Developer
+                        <p class="background-text in-line">&lt;/h1&gt;</p>
+                    </h2>
+                    <p class="background-text in-line">&lt;p&gt;</p>
+                    <p class="special-background-text">
+                        Student/Front-End Developer
+                    </p>
+                    <p class="background-text in-line">&lt;/p&gt;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About Me-->
+    <section id="aboutMe" class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <p class="background-text">&lt;h2&gt;</p>
+                <h2 class="pink rubberband">
+                    All.About.Me!
+                </h2>
+                <p class="background-text in-line">&lt;/h2&gt;</p>
+
+                <p class="background-text">&lt;p&gt;</p>
+                <p id="myText" class="white aboutMeText">
+                    Hi there! Let me introduce myself. I’m a student studying Artificial
+                    Intelligence (Bachelors) in the University of Malta and a junior web developer.
+                    My coding adventure started with Unity where at the age of 16 I was inspired to pursue game
+                    development.
+                    I dropped game development in 2020 as I got more inspired working with web development technologies
+                    specifically front-end development. Currently I am expanding and gathering as much experience as
+                    possible. I am inspired to contribute to a wonderful team, expanding my experiences and creating new
+                    and exciting projects.
+                <p class="background-text in-line">&lt;/p&gt;</p>
+                </p>
+
+                <button id="myButton" class="button" type="button" onclick="playMusic()">
+                    <audio id="Me" src="Me.mp3"></audio>
+                    PLAY!
+                </button>
+                <p class="background-text in-line">&lt;/audio&gt;</p>
+            </div>
+            <div class="col-6 me-img-container">
+                <img src="Me.JPG" alt="Picture of Me" id="me-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects-->
+
+    <section id="recent-projects" class="container-fuild">
+        <p class="background-text">&lt;h2&gt;</p>
+        <h2 class="pink rubberband">
+            My.Projects
+        </h2>
+        <p class="background-text">&lt;/h2&gt;</p>
+        <div class="row imgContainer">
+            <div class="col-4 projects">
+                <img src="projectTemplate.png" alt="Project 1" class=" projectImg comingSoon">
+                <div class="centered"></div>
+            </div>
+            <div class="col-4 projects">
+                <img src="nadurNadif.jpg" alt="Project 2" class=" projectImg comingSoon">
+                <div class="centered">Coming Soon</div>
+            </div>
+            <div class="col-4 projects">
+                <img src="projectTemplate.png" alt="Project 3" class=" projectImg comingSoon">
+                <div class="centered">Coming Soon</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Conact Me-->
+    <section id="form-section" class="container-fuild">
+        <p class="background-text">&lt;h2&gt;</p>
+        <h2 class="pink rubberband">
+            Contact.Me
+        </h2>
+        <p class="background-text">&lt;/h2&gt;</p>
+        <p class="background-text">&lt;p&gt;</p>
+        <div class="row">
+            <div class="col">
+                <p class="white paragraphs">
+                    I'm interested in joining a team and if you are looking to recruit a web developer, please do not
+                    hesitate
+                    to contact me! Let's be ambitious together (:
+                </p>
+            </div>
+        </div>
+        <p class="background-text">&lt;/p&gt;</p>
+        <div class="form-container">
+            <p class="background-text">&lt;form&gt;</p>
+            <form id="contact-me" action="https://formspree.io/f/xpzkgzol" method="POST">
+                <div class="form-group">
+                    <label for="Name" class="white">Name:
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Ex: John Smith">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="white">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ex: John@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="white">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <p class="background-text">&lt;/from&gt;</p>
+            </form>
+        </div>
+        <div id="status"></div>
+        </div>
+    </section>
+
+    <p class="background-text body-text">&lt;/body&gt;</p>
+    <p class="background-text">&lt;/html&gt;</p>
+    <span id="scroll" class="arrow pulse">
+    </span>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
