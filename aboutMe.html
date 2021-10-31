@@ -30,21 +30,22 @@
                 </div>
             </div>
     </nav>
-    <p class="background-text">&lt;html lang="en"&gt;</p>
-    <p class="background-text body-text">&lt;body&gt;</p>
+    <div class="container-fluid col-6">
+        <p class="background-text">&lt;html lang="en"&gt;</p>
+        <p class="background-text body-text">&lt;body&gt;</p>
+    </div>
+    <!--About Me-->
+    <section class="container-fluid">
+        <div class="row align-items-center">
+            <p class="background-text margin">&lt;h2&gt;</p>
+            <h2 id="aboutMeH1" class="pink rubberband margin">
+                All.About.Me!
+            </h2>
+            <div class="col-9 col-lg-6 col-sm-10 order-1 order-md-1">
+                <p class="background-text margin">&lt;/h2&gt;</p>
 
-    <!-- About Me-->
-    <section class="container-fluid margin">
-        <div class="row">
-            <div class="col">
-                <p class="background-text">&lt;h1&gt;</p>
-                <h1 class="pink rubberband">
-                    All.About.Me!
-                </h1>
-                <p class="background-text in-line">&lt;/h1&gt;</p>
-
-                <p class="background-text">&lt;p&gt;</p>
-                <p id="myText" class="white aboutMeText">
+                <p class="background-text margin">&lt;p&gt;</p>
+                <p id="myText" class="white aboutMeText margin">
                     Hi there! Let me introduce myself. I’m a student studying Artificial
                     Intelligence (Bachelors) in the University of Malta and a junior web developer.
                     My coding adventure started with Unity where at the age of 16 I was inspired to pursue game
@@ -54,22 +55,24 @@
                     experience as
                     possible. I am inspired to contribute to a wonderful team, expanding my experiences and creating new
                     and exciting projects.
-                <p class="background-text in-line">&lt;/p&gt;</p>
+                <p class="background-text margin">&lt;/p&gt;</p>
                 </p>
 
-                <button id="myButton" class="button" type="button" onclick="playMusic()">
+                <button id="myButton" class="button margin" type="button" onclick="playMusic()">
                     <audio id="Me" src="Me.mp3"></audio>
                     PLAY!
                 </button>
                 <p class="background-text in-line">&lt;/audio&gt;</p>
             </div>
-            <div class="col me-img-container">
+            <div class="col-lg-6 me-img-container img-fluid order-2 order-md-2">
                 <img src="Me.JPG" alt="Picture of Me" id="me-img">
             </div>
         </div>
     </section>
+
     <p class="background-text body-text">&lt;/body&gt;</p>
     <p class="background-text in-line">&lt;/html&gt;</p>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

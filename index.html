@@ -13,6 +13,7 @@
 
 <body>
     <!-- Nav -->
+
     <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Luke Cardona</a>
@@ -32,12 +33,13 @@
     </nav>
 
     <!-- Main Title-->
+    <p class="background-text">&lt;html lang="en"&gt;</p>
+    <p class="background-text body-text margin">&lt;body&gt;</p>
     <section class="container-fluid">
         <div class="row">
-            <p class="background-text">&lt;html lang="en"&gt;</p>
-            <p class="background-text body-text">&lt;body&gt;</p>
-            <div class="col-12 margin" id="mainHeader">
-                <div class="col">
+
+            <div class="col-12" id="mainHeader">
+                <div class="col margin">
                     <p class="background-text">&lt;h1&gt;</p>
                     <h1 class="white"><span class="in-line nameAnimation">H</span><span
                             class="in-line nameAnimation">e</span><span class="in-line nameAnimation">l</span><span
@@ -48,14 +50,14 @@
                             class="in-line nameAnimation">!</span>
                     </h1>
                 </div>
-                <div class="col">
+                <div class="col margin">
                     <h1 class="white">
                         <span class="in-line nameAnimation">I'</span><span class="in-line nameAnimation">m,</span> <span
                             class="in-line nameAnimation">L</span><span class="in-line nameAnimation">u</span><span
                             class="in-line nameAnimation">k</span><span class="in-line nameAnimation">e</span>
                     </h1>
                 </div>
-                <div class="col">
+                <div class="col margin">
                     <h2 id="web-dev" class="white">
                         Web Developer
                         <p class="background-text in-line">&lt;/h1&gt;</p>
@@ -72,17 +74,18 @@
 
     <!--About Me-->
 
-    <section id="aboutMe" class="container-fluid margin">
+    <section id="aboutMe" class="container-fluid">
         <div class="row align-items-center">
             <div class="col-9 col-lg-6 col-sm-10 order-1 order-md-1">
-                <p class="background-text">&lt;h2&gt;</p>
-                <h2 class="pink rubberband">
-                    All.About.Me!
-                </h2>
-                <p class="background-text in-line">&lt;/h2&gt;</p>
-
-                <p class="background-text">&lt;p&gt;</p>
-                <p id="myText" class="white aboutMeText">
+                <div class="margin">
+                    <p class="background-text">&lt;h2&gt;</p>
+                    <h2 id="aboutMeH1" class="pink rubberband">
+                        All.About.Me!
+                    </h2>
+                    <p class="background-text">&lt;/h2&gt;</p>
+                </div>
+                <p class="background-text margin">&lt;p&gt;</p>
+                <p id="myText" class="white aboutMeText margin">
                     Hi there! Let me introduce myself. I’m a student studying Artificial
                     Intelligence (Bachelors) in the University of Malta and a junior web developer.
                     My coding adventure started with Unity where at the age of 16 I was inspired to pursue game
@@ -92,10 +95,10 @@
                     experience as
                     possible. I am inspired to contribute to a wonderful team, expanding my experiences and creating new
                     and exciting projects.
-                <p class="background-text in-line">&lt;/p&gt;</p>
+                <p class="background-text margin">&lt;/p&gt;</p>
                 </p>
 
-                <button id="myButton" class="button" type="button" onclick="playMusic()">
+                <button id="myButton" class="button margin" type="button" onclick="playMusic()">
                     <audio id="Me" src="Me.mp3"></audio>
                     PLAY!
                 </button>
@@ -108,29 +111,34 @@
     </section>
 
     <!-- My Skills-->
-    <section class="container-fluid margin" id="mySkills">
-        <div class="row align-items-center container-fluid">
-            <div class="col-11 col-lg-6 col-sm-11 order-1 order-md-11">
-                <p class="background-text">&lt;h2&gt;</p>
-                <h2 class="pink rubberband">
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-9 col-lg-6 col-sm-10 order-1 order-md-1">
+
+                <p class="background-text margin">&lt;h1&gt;</p>
+
+                <h1 class="pink rubberband margin">
                     My.Skills
-                </h2>
-                <p class="background-text in-line">&lt;/h2&gt;</p>
-                <p class="background-text">&lt;p&gt;</p>
-                <p class="white paragraphs">When it comes to my set of skills, I'm still learning and developing them
+                </h1>
+                <p class="background-text margin">&lt;/h1&gt;</p>
+                <p class="background-text margin">&lt;p&gt;</p>
+                <p class="white paragraphs margin">When it comes to my set of skills, I'm still learning and developing
+                    them
                     but I'm no beginner! In the previous two years I have increased my experiences in game development
                     and web development.<br><br>
                     As a student I am constantly getting exposed to new sets of skills
                     increasing my flexibility of projects. Recently I have started to work with organizations to
                     design small applications and websites.
                     <br><br>
-                    For more information do not hesitate to <a href="#contact-me" class="pink link">Contact Me!</a>
+                    For more information do not hesitate to <a href="index.html#contact-me" class="pink link">Contact
+                        Me!</a>
                 </p>
-                <p class="background-text in-line">&lt;/p&gt;</p>
+                <p class="background-text margin">&lt;/p&gt;</p>
             </div>
-            <div class=" col-9 col-lg-6 col-sm-10 order-2 order-md-2">
+            <div class="col-lg-6 order-2 order-md-2">
                 <h3 class="white bar-text">HTML:</h3>
-                <div class="progress " style="width:90%">
+                <div class="progress">
                     <div class="progress-bar black" role="progressbar" style="width: 80%; background-color: #FF5F40"
                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                 </div>
@@ -173,10 +181,9 @@
         </div>
     </section>
     <!-- Recent Projects-->
-
     <section id="recent-projects" class="container-fuild margin">
         <p class="background-text">&lt;h2&gt;</p>
-        <h2 class="pink rubberband">
+        <h2 class="pink rubberband ">
             My.Projects
         </h2>
         <p class="background-text">&lt;/h2&gt;</p>
@@ -197,16 +204,19 @@
     </section>
 
     <!--Conact Me-->
-    <section id="form-section" class="container-fuild margin">
-        <p class="background-text">&lt;h2&gt;</p>
-        <h2 class="pink rubberband">
-            Contact.Me
-        </h2>
-        <p class="background-text">&lt;/h2&gt;</p>
-        <p class="background-text">&lt;p&gt;</p>
+    <section id="form-section" class="container-fuild">
+        <div class="col-6">
+            <p class="background-text margin">&lt;h2&gt;</p>
+            <h2 class="pink rubberband margin">
+                Contact.Me
+            </h2>
+        </div>
+        <p class="background-text margin">&lt;/h2&gt;</p>
+        <p class="background-text margin">&lt;p&gt;</p>
         <div class="row">
             <div class="col-9">
-                <div class="white paragraphs">
+
+                <div class="white paragraphs margin">
                     <h3 class="light-pink">Do you offer freelancing services?</h3>
                     <p class="white paragraphs">
                         Currently at the moment I am offering freelancing services for small and medium projects but I
@@ -232,7 +242,8 @@
                 </div>
             </div>
         </div>
-        <p class="background-text">&lt;/p&gt;</p>
+        <p class="background-text margin">&lt;/p&gt;</p>
+
         <div class="form-container">
             <p class="background-text">&lt;form&gt;</p>
             <form id="contact-me" action="https://formspree.io/f/xpzkgzol" method="POST">

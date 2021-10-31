@@ -14,10 +14,11 @@ body{
     background-color: var(--background-color);
     max-width: 100%;
     overflow-x: hidden;
+    margin-left: 5px;
 }
 
 h1{
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
 }
@@ -26,6 +27,7 @@ h2{
     font-size: 6.5rem;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
+    width: 100%;
 }
 
 h3{
@@ -41,6 +43,11 @@ h3:hover{
     transform: scale(102%);
     color: var(--red);
     cursor: pointer;
+}
+
+nav{
+    padding: 0;
+    margin: 0;
 }
 /* General Classes*/
 
@@ -103,19 +110,18 @@ h3:hover{
     font-weight: 200;
     font-size: 2.35rem;
     font-style: italic;
-    font-family: 'Dancing Script', cursive;
+    padding-right:0;
+    font-family: 'Dancing Script', cursive;;
 }
-
+.col{
+    padding-right:0 ;
+}
 .special-background-text{
     color:#B2B1B9;
     font-weight: 500;
     font-size: 3rem;
     font-style: normal;
     font-family: 'Dancing Script', cursive;
-}
-
-.body-text{
-    margin-left: 2rem;
 }
 
 .nameAnimation:hover{
@@ -126,6 +132,11 @@ h3:hover{
 
 .container-fluid{
     padding:0;
+    margin: 0;
+}
+
+.row{
+    width: 100%;
 }
 /* End General Clsses*/
 /*Id's */
@@ -230,6 +241,7 @@ h3:hover{
 #mySkills{
     margin-top: 9rem;
 }
+
  /*End Id's*/
 
 
@@ -351,9 +363,9 @@ h3:hover{
 }
 .form-container{
     width: 50%;
+    padding: 20px;
     max-width: 700px;
     margin: 0 auto;
-    padding: 20;
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -456,10 +468,16 @@ button[type="submit"]:hover{
     #barHeader{
         font-size: 2.5rem;
     }
+    #aboutMeH1{
+        font-size: 5rem;
+    }
 }
 @media(max-width:1300px){
-    h2{
+    h1{
         font-size: 5rem;
+    }
+    h2{
+        font-size: 4.5rem;
     }
     #barHeader{
         font-size:2rem;
@@ -467,16 +485,16 @@ button[type="submit"]:hover{
     .bar-text{
         font-size: 1rem;
     }
-    .margin{
-        margin-left: 3rem;
-    }
     .paragraphs{
         font-size: 1.25rem;
     }
 }
 @media(max-width:1105px){
+    h1{
+        font-size: 4.5rem;
+    }
     h2{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     .aboutMeText{
         font-size: 1.25rem;
@@ -487,7 +505,7 @@ button[type="submit"]:hover{
 }
 @media(max-width:990px){
     h1{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     h2{
         font-size: 4rem;
@@ -507,6 +525,10 @@ button[type="submit"]:hover{
     .aboutMeText{
         font-size: 1.25rem;
     }
+    #me-img{
+        padding-top: 6rem;
+    }
+    
     .textanimation span{
       
       font-size: 1.5rem;
@@ -523,6 +545,15 @@ button[type="submit"]:hover{
     .centered{
         font-size: 2rem;
     }
+    #aboutMeH1{
+        font-size: 3.5rem;
+    }
+    #me-img{
+        padding: 5rem;
+    }
+    #mySkillsH1{
+        font-size: 4.5rem;
+    }
 }
 @media(max-width: 730px){
     h1{
@@ -530,6 +561,9 @@ button[type="submit"]:hover{
     }
     h2{
         font-size: 3.5rem;
+    }
+    h3{
+        font-size: 1.75rem;
     }
     .margin{
         margin-left: 1rem;
@@ -558,6 +592,12 @@ button[type="submit"]:hover{
     #formButton{
         font-size: 1.5rem;
     }
+    #aboutMeH1{
+        font-size: 2rem;
+    }
+    #me-img{
+        padding: 4rem;
+    }
 }
 
 @media(max-width:550px){
@@ -566,6 +606,9 @@ button[type="submit"]:hover{
     }
     h2{
         font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
     }
     .margin{
         margin-left: 0.5rem;
@@ -594,6 +637,12 @@ button[type="submit"]:hover{
     .centered{
         font-size: 1.5rem;
     }
+    #me-img{
+        padding: 3rem;
+    }
+    .paragraphs{
+        font-size: 1rem;
+    }
 }
 
 @media(max-width:385px){
@@ -602,6 +651,9 @@ button[type="submit"]:hover{
     }
     h2{
         font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1rem;
     }
     .margin{
         margin-left: 0.5rem;
@@ -627,6 +679,15 @@ button[type="submit"]:hover{
     }
     #formButton{
         font-size: 1rem;
+    }
+    #aboutMeH1{
+        font-size: 1.5rem;
+    }
+    #me-img{
+        padding: 3rem;
+    }
+    .paragraphs{
+        font-size: .75rem;
     }
 }
 @media(max-width: 767 px){
