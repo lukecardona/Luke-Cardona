@@ -6,9 +6,13 @@
     --dark-purple: #AA2EE6;
     --nav-color: #212121;
     --light-purple: #AD62AA;
+    --red: #E94560;
+    --success:#5cb85c;
+    --danger: #FA1E0E;
 }
 body{
-    background-color: #222831 ;
+    background-color: var(--background-color);
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -19,12 +23,29 @@ h1{
 }
 
 h2{
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: 6.5rem;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
 }
 
+h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Roboto",sans-serif;
+    margin-top: 3rem;
+    padding-bottom: 20px;
+    transition: all 0.2s ease;
+}
+
+h3:hover{
+    transform: scale(102%);
+    color: var(--red);
+    cursor: pointer;
+}
+/* General Classes*/
+
 .white{
-    color: whitesmoke;
+    color: white;
 }
 
 .pink{
@@ -43,18 +64,78 @@ h2{
     margin-top: 3rem;
 }
 
-.side-page-margin{
-    margin-top: 2rem;
+.top-margin-lg{
+    margin-top: 45rem;
+}
+
+.margin{
     margin-left: 6rem;
 }
+
+.in-line{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.link:hover{
+    transform: scale(105%);
+    color:var(--red);
+    text-decoration: underline;
+}
+
+.paragraphs{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: "Roboto" sans-serif;
+    position: relative;
+}
+
+.background-text{
+    color:#444444;
+    font-weight: 200;
+    font-size: 2.35rem;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+}
+
+.special-background-text{
+    color:#B2B1B9;
+    font-weight: 500;
+    font-size: 3rem;
+    font-style: normal;
+    font-family: 'Dancing Script', cursive;
+}
+
+.body-text{
+    margin-left: 2rem;
+}
+
+.nameAnimation:hover{
+    cursor: pointer;
+    color: var(--red);
+    animation: rubberBand 1s;
+}
+
+.container-fluid{
+    padding:0;
+}
+/* End General Clsses*/
+/*Id's */
 
 #mainHeader{
     margin-top: 6rem;
-    margin-left: 6rem;
 }
 
 #mainNavbar {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 100;
     padding: 0 1rem;
     background-color: var(--nav-color);
@@ -80,15 +161,17 @@ h2{
 }
 
 #aboutMe{
-    margin-top: 15rem;
-    margin-left: 6rem;
+    margin-top: 11rem;
+    padding:0;
 }
 
 #me-img{
     width: 50%;
     border-radius: 50%;
     display: block;
+    padding:0;
 }
+
 #myButton{
     font-size: 50px;
     font-family: "Roboto" sans-serif;
@@ -129,61 +212,36 @@ h2{
 }
 
 #recent-projects{
-    margin: 10rem 6rem;
+    margin-top: 6rem;
 }
 
 #barHeader{
-    font-size: 4rem;
+    font-size:3rem;
     font-weight: 300;
+    cursor: pointer;
     transition: all .3s;
 }
 
 #barHeader:hover,
 .learning:hover{
-    color: #E94560;
+    color: var(--red);
 }
 
-.margin{
-    margin-left: 6rem;
+#mySkills{
+    margin-top: 9rem;
 }
+ /*End Id's*/
 
-.background-text{
-    color:#444444;
-    font-weight: 200;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-family: 'Dancing Script', cursive;
-}
 
-.special-background-text{
-    color:#B2B1B9;
-    font-weight: 500;
-    font-size: 3rem;
-    font-style: normal;
-    font-family: 'Dancing Script', cursive;
-}
 
-.body-text{
-    margin-left: 2rem;
-}
-
-.in-line{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-.nameAnimation:hover{
-    cursor: pointer;
-    color: #E94560;
-    animation: rubberBand 1s;
-}
-
+/* To be fixed */
 .navbar.scrolled {
     background: rgb(222,192,222);
     transition: background 500ms;
 }
-
+ /* About Me */
 .me-img-container{
+    padding:0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,9 +256,31 @@ h2{
 
 .textanimation span{
     color: #FF5F40;
+    font-size: 1.75rem;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
 }
 
+.aboutMeText span:nth-child(149){
+    display: block;
+    padding: 15px 0;
+}
+ /*End About Me*/
+
+ /*Skills */
+ .progress{
+     width: 90%;
+ }
+ .bar-text{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Roboto" sans-serif;
+}
+.learning{
+    transition: all .3s;
+    cursor: pointer;
+}
+ /*End My Skills */
+ /*My Work*/
 .imgContainer{
     display:flex;
     justify-content: center;
@@ -220,10 +300,11 @@ h2{
 .projectImg:hover{
     opacity: 85%;
 }
+
 .projects{
     position: relative;
     text-align: center;
-    color: white;
+    color: var(--dark-purple);
 }
 
 .centered{
@@ -237,37 +318,37 @@ h2{
     font-size: 3.5rem;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    opacity: 85%;
+}
+
+.projects{
+    transition: all .2s ease-in;
+}
+
+.projects:hover{
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.comingSoon{
+    transition: all .3s ease;
 }
 
 .comingSoon:hover{
-    opacity: 50%;
+    opacity: 30%;
 }
 
-.aboutMeText span:nth-child(149){
-    display: block;
-    padding: 15px 0;
-}
-.paragraphs{
-    font-size: 1.5rem;
-    line-height: 1.8;
-    font-family: "Roboto" sans-serif;
-    position: relative;
-}
+ /*End My Work*/
 
-.bar-text{
-    padding: 15px 0;
-    font-family: "Roboto" sans-serif;
-}
-
- /* */
+ /* Form */
 #form-section{
     margin-top: 5rem;
-    margin-left: 6rem;
     height: 100vh;
     width: 100%;
+    margin-bottom: 8rem;
 }
-
+#final-text{
+    margin-left: 0;
+}
 .form-container{
     width: 50%;
     max-width: 700px;
@@ -292,16 +373,6 @@ h2{
     margin-top: 10px;
     color: white;
     background-color: #2B2B2B;
-}
-
-.link{
-    text-decoration: none;
-    font-weight: 500;
-    transition: all .3s ease;
-}
-
-.link:hover{
-    color:#E94560;
 }
 
 input:placeholder-shown,
@@ -343,15 +414,17 @@ button[type="submit"]:hover{
 }
 
 #status.success{
-    background-color: green;
+    background-color:var(--success);
     animation: status 4s ease forwards;
 }
 
 #status.error{
     color: white;
-    background-color: red;
+    background-color:var(--danger);
     animation: status 4s ease forwards;
 }
+
+/* Scroll Hint */
 
 .arrow {
     position: fixed;
@@ -363,6 +436,7 @@ button[type="submit"]:hover{
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
     background-size: contain;
   }
+
   .arrow:first-child {
     bottom: 20px;
     opacity: 0.3;
@@ -377,10 +451,195 @@ button[type="submit"]:hover{
     animation: pulse 2s infinite;
   }
   
-  @keyframes pulse {
+/*media */
+@media(max-width:1500px){
+    #barHeader{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:1300px){
+    h2{
+        font-size: 5rem;
+    }
+    #barHeader{
+        font-size:2rem;
+    }
+    .bar-text{
+        font-size: 1rem;
+    }
+    .margin{
+        margin-left: 3rem;
+    }
+    .paragraphs{
+        font-size: 1.25rem;
+    }
+}
+@media(max-width:1105px){
+    h2{
+        font-size: 5rem;
+    }
+    .aboutMeText{
+        font-size: 1.25rem;
+    }
+    .textanimation span{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:990px){
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .margin{
+        margin-left: 2.5rem;
+    }
+    .special-background-text{
+        font-size: 2.5rem;
+    }
+    .background-text{
+        font-size: 2rem;
+    }
+    .aboutMeText{
+        font-size: 1.25rem;
+    }
+    .textanimation span{
+      
+      font-size: 1.5rem;
+    }
+    #myButton{
+        font-size: 2rem;
+    }
+    #formButton{
+        font-size: 2rem;
+    }
+    .paragraphs{
+        font-size: 1.5rem;
+    }
+    .centered{
+        font-size: 2rem;
+    }
+}
+@media(max-width: 730px){
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    .margin{
+        margin-left: 1rem;
+    }
+    .special-background-text{
+        font-size: 2rem;
+    }
+    .background-text{
+        font-size: 1.5rem;
+    }
+    .aboutMeText{
+        font-size: 1.1rem;
+    }
+    .textanimation span{
+        font-size: 1.25rem;
+    }
+    #myButton{
+        font-size: 1.5rem;
+    }
+    .paragraphs{
+        font-size: 1.25rem;
+    }
+    #myButton{
+        font-size: 1.5rem;
+    }
+    #formButton{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:550px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .margin{
+        margin-left: 0.5rem;
+    }
+    .special-background-text{
+        font-size: 1.5rem;
+    }
+    .background-text{
+        font-size: 1rem;
+    }
+    #mainNavbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .aboutMeText{
+        font-size: 0.9rem;
+    }
+    .textanimation span{
+        font-size: 1.1rem;
+    }
+    #myButton{
+        font-size: 1.25rem;
+    }
+    #formButton{
+        font-size: 1.25rem;
+    }
+    .centered{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:385px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .margin{
+        margin-left: 0.5rem;
+    }
+    .special-background-text{
+        font-size: 1rem;
+    }
+    .background-text{
+        font-size: 0.75rem;
+    }
+    #mainNavbar .navbar-brand {
+        color: var(--light-purple);
+        font-size: 1.5rem;
+    }
+    #mainNavbar .nav-link {
+        font-size: 1.5rem;
+    }
+    .centered{
+        font-size: 1rem;
+    }
+    #myButton{
+        font-size: 1rem;
+    }
+    #formButton{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 767 px){
+   .site-grid {
+      margin-top: 0 px;
+      overflow-x: hidden;
+   }
+}
+  /*KeyFrames */
+@keyframes pulse {
       0%  { opacity: 1;   }
     90% { opacity: 0.3; }
-  }
+}
   
 @keyframes status{
     0%{
@@ -417,7 +676,6 @@ button[type="submit"]:hover{
         transform: scale3d(1,1,1); 
     }
 }
-
 @keyframes color-change{
     0%{
         color: crimson;

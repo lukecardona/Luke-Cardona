@@ -49,11 +49,16 @@ function playMusic() {
     }
     isPlaying = !isPlaying;
 }
-
+//Horizontal Scroll Fix
 speech.addEventListener("ended", function () {
     playMusic();
 })
+var scrollEventHandler = function () {
+    window.scroll(0, window.pageYOffset)
+}
 
+window.addEventListener("scroll", scrollEventHandler, false);
+//Pulse
 var scroll = document.getElementById("scroll")
 var scrollRemoved = false;
 $(window).scroll(function () {
