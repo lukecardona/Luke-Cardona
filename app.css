@@ -108,7 +108,7 @@ nav{
 .background-text{
     color:#444444;
     font-weight: 200;
-    font-size: 2.35rem;
+    font-size: 1.5rem;
     font-style: italic;
     padding-right:0;
     font-family: 'Dancing Script', cursive;;
@@ -142,7 +142,7 @@ nav{
 /*Id's */
 
 #mainHeader{
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 #mainNavbar {
@@ -172,7 +172,7 @@ nav{
 }
 
 #aboutMe{
-    margin-top: 11rem;
+    margin-top: 7rem;
     padding:0;
 }
 
@@ -353,7 +353,7 @@ nav{
 
  /* Form */
 #form-section{
-    margin-top: 5rem;
+    margin-top: 10rem;
     height: 100vh;
     width: 100%;
     margin-bottom: 8rem;
@@ -361,6 +361,11 @@ nav{
 #final-text{
     margin-left: 0;
 }
+
+#formButton{
+    transition: 0.15s all ease-in-out;
+}
+
 .form-container{
     width: 50%;
     padding: 20px;
@@ -469,7 +474,7 @@ button[type="submit"]:hover{
         font-size: 2.5rem;
     }
     #aboutMeH1{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }
 @media(max-width:1300px){
@@ -690,12 +695,12 @@ button[type="submit"]:hover{
         font-size: .75rem;
     }
 }
-@media(max-width: 767 px){
-   .site-grid {
-      margin-top: 0 px;
-      overflow-x: hidden;
-   }
-}
+    @media(max-width: 767px){
+    .site-grid {
+        margin-top: 0 px;
+        overflow-x: hidden;
+    }
+    }
   /*KeyFrames */
 @keyframes pulse {
       0%  { opacity: 1;   }
