@@ -14,7 +14,6 @@ body{
     background-color: var(--background-color);
     max-width: 100%;
     overflow-x: hidden;
-    margin-left: 5px;
 }
 
 h1{
@@ -49,8 +48,12 @@ nav{
     padding: 0;
     margin: 0;
 }
-/* General Classes*/
 
+footer{
+    text-align: center;
+}
+
+/* General Classes*/
 .white{
     color: white;
 }
@@ -138,11 +141,13 @@ nav{
 .row{
     width: 100%;
 }
+
 /* End General Clsses*/
 /*Id's */
 
 #mainHeader{
     margin-top: 4rem;
+    padding-left: 0;
 }
 
 #mainNavbar {
@@ -226,6 +231,10 @@ nav{
     margin-top: 6rem;
 }
 
+#recent-projects h2{
+    margin-bottom: 4rem;
+}
+
 #barHeader{
     font-size:3rem;
     font-weight: 300;
@@ -241,7 +250,6 @@ nav{
 #mySkills{
     margin-top: 9rem;
 }
-
  /*End Id's*/
 
 
@@ -269,7 +277,7 @@ nav{
 .textanimation span{
     color: #FF5F40;
     font-size: 1.75rem;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    transition: all
 }
 
 .aboutMeText span:nth-child(149){
@@ -282,6 +290,7 @@ nav{
  .progress{
      width: 90%;
  }
+
  .bar-text{
     font-size: 2rem;
     padding: 15px 0;
@@ -351,13 +360,24 @@ nav{
 
  /*End My Work*/
 
+ /*Contact me*/
+#contactQuestions{
+    margin-left: 0;
+    padding-right:6rem;
+    text-align: justify;
+ }
+
+#contactQuestions h3{
+    text-align: left;
+}
+
  /* Form */
 #form-section{
     margin-top: 10rem;
-    height: 100vh;
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
+
 #final-text{
     margin-left: 0;
 }
@@ -367,9 +387,9 @@ nav{
 }
 
 .form-container{
-    width: 50%;
+    width: 75%;
     padding: 20px;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -423,7 +443,6 @@ button[type="submit"]:hover{
 
 #status{
     width: 90%;
-    max-width: 500px;
     text-align: center;
     padding: 10px;
     margin: 0 auto;
@@ -468,15 +487,13 @@ button[type="submit"]:hover{
     animation: pulse 2s infinite;
   }
   
-/*media */
+/*media respoviness*/
 @media(max-width:1500px){
     #barHeader{
         font-size: 2.5rem;
     }
-    #aboutMeH1{
-        font-size: 4.5rem;
-    }
 }
+
 @media(max-width:1300px){
     h1{
         font-size: 5rem;
@@ -508,6 +525,7 @@ button[type="submit"]:hover{
         font-size: 1.5rem;
     }
 }
+
 @media(max-width:990px){
     h1{
         font-size: 4.5rem;
@@ -550,9 +568,6 @@ button[type="submit"]:hover{
     .centered{
         font-size: 2rem;
     }
-    #aboutMeH1{
-        font-size: 3.5rem;
-    }
     #me-img{
         padding: 5rem;
     }
@@ -560,6 +575,70 @@ button[type="submit"]:hover{
         font-size: 4.5rem;
     }
 }
+
+/*Bootstrap lg */
+@media(max-width:960px){
+
+    /*All Sections Specific Responivness*/
+    #aboutMe,
+    #mySkills,
+    #recent-projects,
+    #form-section{
+        text-align: center;
+    }
+
+    #aboutMe .background-text,
+    #mySkills .background-text,
+    #recent-projects .background-text,
+    #form-section .background-text{
+        display: none;
+    }
+
+    #aboutMe h2,
+    #mySkills h2,
+    #recent-projects h2{
+        margin-bottom: 4rem;
+    }
+
+    /*About Me Respoviness */
+    #myText{
+        padding: 0 2rem;
+    }
+
+    #audioText{
+        display: inline !important;
+    }
+
+    /*My Skills Respoviness */
+    #mySkills{
+        margin-top:2rem;
+    }
+
+    .progress{
+        width: 100%;
+    }
+
+    /*Projects Respoviness */
+
+    /*Contact Me Responivness */
+    #form-section{
+        margin-top: 5rem;
+        margin-bottom: 0;
+    }
+
+    #contactQuestions{
+        padding-right:2rem;
+    }
+
+    /*Form Responivness */
+    .form-container{
+        width:90%;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    
+}
+
 @media(max-width: 730px){
     h1{
         font-size: 4rem;
@@ -597,9 +676,7 @@ button[type="submit"]:hover{
     #formButton{
         font-size: 1.5rem;
     }
-    #aboutMeH1{
-        font-size: 2rem;
-    }
+
     #me-img{
         padding: 4rem;
     }
@@ -685,9 +762,6 @@ button[type="submit"]:hover{
     #formButton{
         font-size: 1rem;
     }
-    #aboutMeH1{
-        font-size: 1.5rem;
-    }
     #me-img{
         padding: 3rem;
     }
@@ -695,15 +769,17 @@ button[type="submit"]:hover{
         font-size: .75rem;
     }
 }
-    @media(max-width: 767px){
+@media(max-width: 767px){
     .site-grid {
         margin-top: 0 px;
         overflow-x: hidden;
     }
-    }
-  /*KeyFrames */
+}
+
+
+/*KeyFrames */
 @keyframes pulse {
-      0%  { opacity: 1;   }
+    0%  { opacity: 1;   }
     90% { opacity: 0.3; }
 }
   

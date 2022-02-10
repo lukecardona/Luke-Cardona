@@ -1,19 +1,26 @@
+AOS.init();
+
 $(function () {
     $(document).scroll(function () {
         var $nav = $("#mainNavbar");
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
 });
+
+
+
+/*Audio Section */
 const text = document.getElementById("myText");
-var speech = new Audio("Me.mp3")
+const speech = new Audio("Me.mp3");
+const myButton = document.getElementById("myButton");
+speech.pause();
 var isPlaying = false;
 var delay = 47;
-speech.pause();
 
 const letters = document.querySelectorAll(".aboutMeText")
 const rubberband = document.querySelectorAll(".rubberband")
 atStart();
-
+/*Adding Text to speech animation*/
 function atStart() {
     letters.forEach(letters => {
         letters.innerHTML = letters.innerText
@@ -23,31 +30,51 @@ function atStart() {
     })
 }
 
+/*Adding Span to each Letter*/
 rubberband.forEach(rubberband => {
     rubberband.innerHTML = rubberband.innerText
         .split("")
-        .map((letter) => `<span class="nameAnimation in-line">${letter}</span>`)
+        .map((letter, idx) => `<span class="nameAnimation in-line" data-aos="fade-down"
+        data-aos-delay="${idx * 50}" data-aos-duration="800">${letter}</span>`)
         .join("")
 })
 
+/*Adding Animation Class */
 function textEffect() {
     const text = document.getElementById("myText");
     text.classList.add("textanimation");
 }
 
+/*Button Music*/
 function playMusic() {
     if (isPlaying) {
+        /*If stopped Mid Way */
         speech.pause();
         speech.currentTime = 0;
         delay = 47;
         atStart();
         text.classList.remove("textanimation")
+        myButton.innerText = "PLAY!"
+        isPlaying = false;
     } else {
+        /*If Stopped Mid Way */
         speech.play();
         textEffect();
         delay = 0;
+        myButton.innerText = "STOP!"
+        isPlaying = true;
     }
-    isPlaying = !isPlaying;
+
+    /*At end of Message */
+    setTimeout(function () {
+        speech.pause();
+        speech.currentTime = 0;
+        delay = 47;
+        atStart();
+        text.classList.remove("textanimation")
+        myButton.innerText = "PLAY!"
+        isPlaying = false;
+    }, 32000);
 }
 
 window.addEventListener("scroll", scrollEventHandler, false);
@@ -81,11 +108,11 @@ async function handleSubmit(event) {
         }
     }).then(response => {
         status.classList.add("success");
-        status.innerHTML = "Thanks for your submission!";
+        status.innerText = "Thanks for your submission!";
         form.reset()
     }).catch(error => {
         status.classList.add("error")
-        status.innerHTML = "Oops! There was a problem"
+        status.innerText = "Oops! There was a problem"
     });
 }
 form.addEventListener("submit", handleSubmit)

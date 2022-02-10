@@ -8,6 +8,7 @@
     <title>My Skills</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -30,7 +31,9 @@
                 </div>
             </div>
     </nav>
-    <div class="container-fluid col-6">
+
+
+    <div class="container-fluid">
         <p class="background-text">&lt;html lang="en"&gt;</p>
         <p class="background-text body-text">&lt;body&gt;</p>
     </div>
@@ -41,8 +44,9 @@
             <h2 id="aboutMeH1" class="pink rubberband margin">
                 All.About.Me!
             </h2>
-            <div class="col-9 col-lg-6 col-sm-10 order-1 order-md-1">
-                <p class="background-text margin">&lt;/h2&gt;</p>
+            <p class="background-text margin">&lt;/h2&gt;</p>
+            <div class="col-lg-6 col-sm-12 order-1 order-md-1" data-aos="fade-right" data-aos-delay="800"
+                data-aos-duration="800">
 
                 <p class="background-text margin">&lt;p&gt;</p>
                 <p id="myText" class="white aboutMeText margin">
@@ -64,7 +68,8 @@
                 </button>
                 <p class="background-text in-line">&lt;/audio&gt;</p>
             </div>
-            <div class="col-lg-6 me-img-container img-fluid order-2 order-md-2">
+            <div class="col-lg-6 me-img-container img-fluid order-2 order-md-2" data-aos="fade-left"
+                data-aos-delay="400" data-aos-duration="800">
                 <img src="Me.JPG" alt="Picture of Me" id="me-img">
             </div>
         </div>
@@ -82,6 +87,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <!--Animations Scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--My Script-->
     <script src="script.js"></script>
 </body>
 

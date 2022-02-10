@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <title>Portofolio</title>
 </head>
 
 <body>
     <!-- Nav -->
-
     <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Luke Cardona</a>
@@ -40,32 +40,54 @@
 
             <div class="col-12" id="mainHeader">
                 <div class="col margin">
-                    <p class="background-text">&lt;h1&gt;</p>
-                    <h1 class="white"><span class="in-line nameAnimation">H</span><span
-                            class="in-line nameAnimation">e</span><span class="in-line nameAnimation">l</span><span
-                            class="in-line nameAnimation">l</span><span class="in-line nameAnimation">o</span><span
-                            class="in-line nameAnimation">-</span><span class="in-line nameAnimation">H</span><span
-                            class="in-line nameAnimation">e</span><span class="in-line nameAnimation">l</span><span
-                            class="in-line nameAnimation">l</span><span class="in-line nameAnimation">o</span><span
-                            class="in-line nameAnimation">!</span>
+                    <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="800">
+                        <p class="background-text">&lt;h1&gt;</p>
+                    </div>
+                    <h1 class="white">
+                        <span class="in-line nameAnimation" data-aos="fade-down" data-aos-delay="50"
+                            data-aos-duration="800">H</span><span class="in-line nameAnimation" data-aos="fade-down"
+                            data-aos-delay="100" data-aos-duration="800">e</span><span class="in-line nameAnimation"
+                            data-aos="fade-down" data-aos-delay="150" data-aos-duration="800">l</span><span
+                            class="in-line nameAnimation" data-aos="fade-down" data-aos-delay="200"
+                            data-aos-duration="800">l</span><span class="in-line nameAnimation" data-aos="fade-down"
+                            data-aos-delay="250" data-aos-duration="800">o</span><span class="in-line nameAnimation"
+                            data-aos="fade-down" data-aos-delay="350" data-aos-duration="800">-</span><span
+                            class="in-line nameAnimation" data-aos="fade-down" data-aos-delay="450"
+                            data-aos-duration="800">H</span><span class="in-line nameAnimation" data-aos="fade-down"
+                            data-aos-delay="550" data-aos-duration="800">e</span><span class="in-line nameAnimation"
+                            data-aos="fade-down" data-aos-delay="650" data-aos-duration="800">l</span><span
+                            class="in-line nameAnimation" data-aos="fade-down" data-aos-delay="750"
+                            data-aos-duration="800">l</span><span class="in-line nameAnimation" data-aos="fade-down"
+                            data-aos-delay="850" data-aos-duration="800">o</span><span class="in-line nameAnimation"
+                            data-aos="fade-down" data-aos-delay="950" data-aos-duration="800">!</span>
                     </h1>
                 </div>
                 <div class="col margin">
                     <h1 class="white">
-                        <span class="in-line nameAnimation">I'</span><span class="in-line nameAnimation">m</span> <span
-                            class="in-line nameAnimation">L</span><span class="in-line nameAnimation">u</span><span
-                            class="in-line nameAnimation">k</span><span class="in-line nameAnimation">e</span>
+                        <span class="in-line nameAnimation" data-aos="fade-left" data-aos-delay="1200"
+                            data-aos-duration="700">I'</span><span class="in-line nameAnimation" data-aos="fade-left"
+                            data-aos-delay="1250" data-aos-duration="700">m</span>
+                        <span class="in-line nameAnimation" data-aos="fade-left" data-aos-delay="1300"
+                            data-aos-duration="700">L</span><span class="in-line nameAnimation" data-aos="fade-left"
+                            data-aos-delay="1350" data-aos-duration="700">u</span><span class="in-line nameAnimation"
+                            data-aos="fade-left" data-aos-delay="1400" data-aos-duration="700">k</span><span
+                            class="in-line nameAnimation" data-aos="fade-left" data-aos-delay="1450"
+                            data-aos-duration="700">e</span>
                     </h1>
                 </div>
-                <div class="col margin">
-                    <h2 id="web-dev" class="white">
-                        Web Developer
-                        <p class="background-text in-line">&lt;/h1&gt;</p>
-                    </h2>
+                <div class="col margin" data-aos="fade-down" data-aos-delay="1650" data-aos-duration="800">
+                    <div data-aos="zoom-out" data-aos-delay="1650" data-aos-duration="1000">
+                        <h2 id="web-dev" class="white">
+                            Web Developer
+                            <p class="background-text in-line">&lt;/h1&gt;</p>
+                        </h2>
+                    </div>
                     <p class="background-text in-line">&lt;p&gt;</p>
-                    <p class="special-background-text">
-                        Student/Front-End Developer
-                    </p>
+                    <div data-aos="zoom-out" data-aos-delay="1650" data-aos-duration="1000">
+                        <p class="special-background-text">
+                            Student/Front-End Developer
+                        </p>
+                    </div>
                     <p class="background-text in-line">&lt;/p&gt;</p>
                 </div>
             </div>
@@ -76,14 +98,15 @@
 
     <section id="aboutMe" class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-9 col-lg-6 col-sm-10 order-1 order-md-1">
-                <div class="margin">
-                    <p class="background-text">&lt;h2&gt;</p>
-                    <h2 id="aboutMeH1" class="pink rubberband">
-                        All.About.Me!
-                    </h2>
-                    <p class="background-text">&lt;/h2&gt;</p>
-                </div>
+            <div class="margin">
+                <p class="background-text">&lt;h2&gt;</p>
+                <h2 class="pink rubberband">
+                    All.About.Me!
+                </h2>
+                <p class="background-text">&lt;/h2&gt;</p>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-md-1" data-aos="fade-right" data-aos-delay="800"
+                data-aos-duration="800">
                 <p class="background-text margin">&lt;p&gt;</p>
                 <p id="myText" class="white aboutMeText margin">
                     Hi there! Let me introduce myself. I’m a student studying Artificial
@@ -102,9 +125,10 @@
                     <audio id="Me" src="Me.mp3"></audio>
                     PLAY!
                 </button>
-                <p class="background-text in-line">&lt;/audio&gt;</p>
+                <p id="audioText" class="background-text in-line">&lt;/audio&gt;</p>
             </div>
-            <div class="col-lg-6 me-img-container img-fluid order-2 order-md-2">
+            <div class="col-lg-6 me-img-container img-fluid order-2 order-md-2" data-aos="fade-left"
+                data-aos-delay="500" data-aos-duration="800">
                 <img src="Me.JPG" alt="Picture of Me" id="me-img">
             </div>
         </div>
@@ -114,13 +138,14 @@
 
     <section id="mySkills" class="container-fluid">
         <div class="row">
-            <div class="col-9 col-lg-6 col-sm-10 order-1 order-md-1">
+            <div class="col-lg-6 col-sm-12 order-1 order-md-1" data-aos="fade-right" data-aos-delay="800"
+                data-aos-duration="800">
 
                 <p class="background-text margin">&lt;h1&gt;</p>
 
-                <h1 class="pink rubberband margin">
+                <h2 class="pink rubberband margin">
                     My.Skills
-                </h1>
+                </h2>
                 <p class="background-text margin">&lt;/h1&gt;</p>
                 <p class="background-text margin">&lt;p&gt;</p>
                 <p class="white paragraphs margin">When it comes to my set of skills, I'm still learning and developing
@@ -136,7 +161,8 @@
                 </p>
                 <p class="background-text margin">&lt;/p&gt;</p>
             </div>
-            <div class="col-lg-6 order-2 order-md-2">
+            <div class="col-lg-6 col-sm-12 order-2 order-md-2" data-aos="fade-left" data-aos-delay="500"
+                data-aos-duration="800">
                 <h3 class="white bar-text">HTML:</h3>
                 <div class="progress">
                     <div class="progress-bar black" role="progressbar" style="width: 80%; background-color: #FF5F40"
@@ -180,24 +206,26 @@
             </div>
         </div>
     </section>
+
     <!-- Recent Projects-->
+
     <section id="recent-projects" class="container-fuild margin">
         <p class="background-text">&lt;h2&gt;</p>
-        <h2 class="pink rubberband ">
+        <h2 class="pink rubberband">
             My.Projects
         </h2>
         <p class="background-text">&lt;/h2&gt;</p>
         <div class="row imgContainer">
-            <div class="col-4 projects">
-                <img src="lcrsnaps.jpg" alt="Project 1" class=" projectImg comingSoon">
+            <div class="col-4 projects" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800">
+                <img src="lcrsnaps.jpg" alt="Project 1" class="projectImg comingSoon">
                 <div class="centered">Coming Soon</div>
             </div>
-            <div class="col-4 projects">
-                <img src="nadurNadif.jpg" alt="Project 2" class=" projectImg comingSoon">
+            <div class="col-4 projects" data-aos="fade-down" data-aos-delay="750" data-aos-duration="800">
+                <img src="nadurNadif.jpg" alt="Project 2" class="projectImg comingSoon">
                 <div class="centered">Coming Soon</div>
             </div>
-            <div class="col-4 projects">
-                <img src="projectTemplate.png" alt="Project 3" class=" projectImg comingSoon">
+            <div class="col-4 projects" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="800">
+                <img src="projectTemplate.png" alt="Project 3" class="projectImg comingSoon">
                 <div class="centered">Coming Soon</div>
             </div>
         </div>
@@ -205,7 +233,7 @@
 
     <!--Conact Me-->
     <section id="form-section" class="container-fuild">
-        <div class="col-6">
+        <div class="col-12">
             <p class="background-text margin">&lt;h2&gt;</p>
             <h2 class="pink rubberband margin">
                 Contact.Me
@@ -214,64 +242,83 @@
         <p class="background-text margin">&lt;/h2&gt;</p>
         <p class="background-text margin">&lt;p&gt;</p>
         <div class="row">
-            <div class="col-9">
+            <div id="contactQuestions" class="col-12">
 
                 <div class="white paragraphs margin">
-                    <h3 class="light-pink">Do you offer freelancing services?</h3>
-                    <p class="white paragraphs">
-                        Currently at the moment I am offering freelancing services for small and medium projects but I
-                        am
-                        looking to join a team/company to create new and ambitious projects together!
-                    </p>
-                    <h3 class="light-pink">What is the average time to complete a website?</h3>
-                    <p class="white paragraphs">
-                        Well the time depends on the complexity, requirements and additional modules that are needed for
-                        the
-                        specific project. Having said that, the average time between 5-50 days (due to the complexity
-                        range).
-                    </p>
-                    <p class="white paragraphs">
-                    <h3 class="light-pink">Why should I specifically choose you?</h3>
-                    Other than my skills and experience which can be <a href="#mySkills" class="pink link">viewed
-                        here</a>, at the age of 18 I have moved out from my
-                    parent’s house in Gozo and currently living in Msida, Malta. This gives me a certain advantage as I
-                    am able to make my own decisions, accept responsibilities and I’m more independent. I am aware of
-                    the importance of working as a team from my previous work experiences (worked as a waiter in summer
-                    2021) and that a team makes work enjoyable and fun.
-                    </p>
+                    <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="800">
+                        <h3 class="light-pink">Do you offer freelancing services?</h3>
+                        <p class="white paragraphs">
+                            Currently at the moment I am offering freelancing services for small and medium projects but
+                            I
+                            am
+                            looking to join a team/company to create new and ambitious projects together!
+                        </p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="800">
+                        <h3 class="light-pink">What is the average time to complete a website?</h3>
+                        <p class="white paragraphs">
+                            Well the time depends on the complexity, requirements and additional modules that are needed
+                            for
+                            the
+                            specific project. Having said that, the average time between 5-50 days (due to the
+                            complexity
+                            range).
+                        </p>
+                    </div>
+                    <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="800">
+                        <h3 class="light-pink">Why should I specifically choose you?</h3>
+                        <p class="white paragraphs">
+                            Other than my skills and experience which can be <a href="#mySkills"
+                                class="pink link">viewed here</a>, at the age of 18 I have moved out from my parent’s
+                            house in Gozo and currently
+                            living in Msida, Malta. This gives me a certainadvantage as Iam able to make my own
+                            decisions, accept responsibilities and I’m more independent. I amaware ofthe importance of
+                            working as a team from my previous work experiences (worked as a waiter insummer2021) and
+                            that a team makes work enjoyable and fun.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <p class="background-text margin">&lt;/p&gt;</p>
 
-        <div class="form-container">
+        <div class="form-container" data-aos="zoom-out" data-aos-delay="700" data-aos-duration="800">
             <p class="background-text">&lt;form&gt;</p>
             <form id="contact-me" action="https://formspree.io/f/xpzkgzol" method="POST">
                 <div class="form-group">
                     <label for="Name" class="white">Name:
                     </label>
-                    <input type="text" id="name" name="name" placeholder="Ex: John Smith">
+                    <input type="text" id="name" name="name" placeholder="Ex: John Smith" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email" class="white">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Ex: John@gmail.com">
+                    <input type="email" id="email" name="email" placeholder="Ex: John@gmail.com" required>
                 </div>
 
                 <div class="form-group">
                     <label for="message" class="white">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                 </div>
                 <button id="formButton" type="submit">Submit</button>
                 <p class="background-text">&lt;/from&gt;</p>
             </form>
-        </div>
-        <div id="status"></div>
+
+            <div id="status"></div>
         </div>
     </section>
+
+    <!--Footer-->
+    <footer class="textCenter white">
+        <p>&copy; Luke Cardona 2022</p>
+    </footer>
+
+
+
     <span id="scroll" class="arrow pulse">
     </span>
 
+    <!--Bootstrap Scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -281,6 +328,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <!--Animations Scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--My Scripts-->
     <script src="script.js"></script>
 </body>
 
