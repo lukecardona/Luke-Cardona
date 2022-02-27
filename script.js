@@ -77,7 +77,6 @@ function playMusic() {
     }, 32000);
 }
 
-window.addEventListener("scroll", scrollEventHandler, false);
 //Pulse
 var scroll = document.getElementById("scroll")
 var scrollRemoved = false;
@@ -93,6 +92,8 @@ $(window).scroll(function () {
         }
     }
 });
+
+window.addEventListener("scroll", scrollEventHandler, false);
 //Form Submit
 var form = document.getElementById("contact-me");
 

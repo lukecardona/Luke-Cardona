@@ -10,9 +10,13 @@
     --success:#5cb85c;
     --danger: #FA1E0E;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     background-color: var(--background-color);
     max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -259,6 +263,7 @@ footer{
     background: rgb(222,192,222);
     transition: background 500ms;
 }
+
  /* About Me */
 .me-img-container{
     padding:0;
@@ -277,7 +282,7 @@ footer{
 .textanimation span{
     color: #FF5F40;
     font-size: 1.75rem;
-    transition: all
+    transition: all;
 }
 
 .aboutMeText span:nth-child(149){
@@ -285,6 +290,12 @@ footer{
     padding: 15px 0;
 }
  /*End About Me*/
+
+ /*About Me side Page */
+
+ #aboutMeSidePage{
+     margin-top: 0rem;
+ }
 
  /*Skills */
  .progress{
@@ -300,6 +311,7 @@ footer{
     transition: all .3s;
     cursor: pointer;
 }
+
  /*End My Skills */
  /*My Work*/
 .imgContainer{
@@ -486,14 +498,11 @@ button[type="submit"]:hover{
     opacity: 0.3;
     animation: pulse 2s infinite;
   }
-  
-/*media respoviness*/
-@media(max-width:1500px){
-    #barHeader{
-        font-size: 2.5rem;
-    }
-}
 
+
+/*media respoviness */
+
+/*BootStrap-XL +1100 px*/
 @media(max-width:1300px){
     h1{
         font-size: 5rem;
@@ -510,7 +519,15 @@ button[type="submit"]:hover{
     .paragraphs{
         font-size: 1.25rem;
     }
+    .textanimation span{
+        font-size: 1.25rem;
+    }
+    .aboutMeText{
+        font-size: 1.25rem;
+    }
 }
+
+/*Small Respoviness Fixes */
 @media(max-width:1105px){
     h1{
         font-size: 4.5rem;
@@ -518,104 +535,101 @@ button[type="submit"]:hover{
     h2{
         font-size: 4.5rem;
     }
-    .aboutMeText{
-        font-size: 1.25rem;
-    }
-    .textanimation span{
-        font-size: 1.5rem;
-    }
 }
 
-@media(max-width:990px){
-    h1{
-        font-size: 4.5rem;
-    }
-    h2{
-        font-size: 4rem;
-    }
-    h3{
-        font-size: 2rem;
-    }
-    .margin{
-        margin-left: 2.5rem;
-    }
-    .special-background-text{
-        font-size: 2.5rem;
-    }
-    .background-text{
-        font-size: 2rem;
-    }
-    .aboutMeText{
-        font-size: 1.25rem;
-    }
-    #me-img{
-        padding-top: 6rem;
-    }
-    
-    .textanimation span{
-      
-      font-size: 1.5rem;
-    }
-    #myButton{
-        font-size: 2rem;
-    }
-    #formButton{
-        font-size: 2rem;
-    }
-    .paragraphs{
-        font-size: 1.5rem;
-    }
-    .centered{
-        font-size: 2rem;
-    }
-    #me-img{
-        padding: 5rem;
-    }
-    #mySkillsH1{
-        font-size: 4.5rem;
-    }
-}
+/*Bootstrap lg - 992PX*/
+@media(max-width:992px){
 
-/*Bootstrap lg */
-@media(max-width:960px){
+    /*Classes Connected with lg */
+    .noDisplay-lg{
+        display: none;
+    }
 
     /*All Sections Specific Responivness*/
     #aboutMe,
+    #aboutMeSidePage,
     #mySkills,
+    #mySkillsPage,
     #recent-projects,
     #form-section{
         text-align: center;
     }
 
     #aboutMe .background-text,
+    #aboutMeSidePage .background-text,
     #mySkills .background-text,
+    #mySkillsPage .background-text,
     #recent-projects .background-text,
     #form-section .background-text{
         display: none;
     }
 
     #aboutMe h2,
+    #aboutMeSidePage h2,
     #mySkills h2,
+    #mySkillsPage h2,
     #recent-projects h2{
         margin-bottom: 4rem;
     }
 
-    /*About Me Respoviness */
+    /*General Respoviness*/
+    h3{
+        font-size: 2rem;
+    }
+
+    .margin{
+        margin-left: 2.5rem;
+    }
+
+    .paragraphs{
+        font-size: 1.5rem;
+    }
+
+    .centered{
+        font-size: 2rem;
+    }
+
+    /*BackGround Text Respoviness*/
+
+    .special-background-text{
+        font-size: 1.5rem;
+    }
+    .background-text{
+        font-size: 1rem;
+    }
+
+    /*About Me Respoviness Main Page*/
+
     #myText{
         padding: 0 2rem;
     }
-
     #audioText{
         display: inline !important;
     }
+    #me-img{
+        padding: 5rem;
+        padding-top: 6rem;      
+    }
+    #myButton{
+        font-size: 2rem;
+    }
+    .aboutMeText{
+        font-size: 1.5rem;
+    }
 
     /*My Skills Respoviness */
+
     #mySkills{
         margin-top:2rem;
     }
-
     .progress{
         width: 100%;
+    }
+
+    /*My Skills Page Respoviness */
+    
+    #mySkillsPage{
+        margin-top: 2rem;
     }
 
     /*Projects Respoviness */
@@ -625,69 +639,62 @@ button[type="submit"]:hover{
         margin-top: 5rem;
         margin-bottom: 0;
     }
-
+    #formButton{
+        font-size: 2rem;
+    }
     #contactQuestions{
         padding-right:2rem;
     }
-
     /*Form Responivness */
     .form-container{
         width:90%;
         text-align: left;
         margin-bottom: 0;
     }
-    
 }
 
-@media(max-width: 730px){
-    h1{
-        font-size: 4rem;
-    }
-    h2{
-        font-size: 3.5rem;
-    }
+/*Bootstrap md - 768 px*/
+@media(max-width: 768px){
+
+    /*General Respoviness*/
     h3{
         font-size: 1.75rem;
     }
     .margin{
         margin-left: 1rem;
     }
-    .special-background-text{
-        font-size: 2rem;
-    }
-    .background-text{
-        font-size: 1.5rem;
-    }
-    .aboutMeText{
-        font-size: 1.1rem;
-    }
-    .textanimation span{
-        font-size: 1.25rem;
-    }
-    #myButton{
-        font-size: 1.5rem;
-    }
     .paragraphs{
         font-size: 1.25rem;
     }
-    #myButton{
-        font-size: 1.5rem;
+
+    /*About Me Respoviness */
+    .aboutMeText{
+        font-size: 1.25rem;
     }
+    .textanimation span{
+        font-size: 1.25rem;
+    } 
+    #me-img{
+        padding: 4rem;
+        padding-top: 5rem;    
+    }
+
+    /*Buttons */
+    #myButton,
     #formButton{
         font-size: 1.5rem;
     }
-
-    #me-img{
-        padding: 4rem;
-    }
 }
 
-@media(max-width:550px){
+/*Bootstrap Small - 576px */
+
+@media(max-width:576px){
+    /*General Respoviness*/
     h1{
-        font-size: 3rem;
+        font-size: 3.9rem;
     }
     h2{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     h3{
         font-size: 1.5rem;
@@ -695,41 +702,49 @@ button[type="submit"]:hover{
     .margin{
         margin-left: 0.5rem;
     }
-    .special-background-text{
-        font-size: 1.5rem;
-    }
-    .background-text{
+    .paragraphs{
         font-size: 1rem;
-    }
-    #mainNavbar .navbar-brand {
-        font-size: 1.5rem;
-    }
-    .aboutMeText{
-        font-size: 0.9rem;
-    }
-    .textanimation span{
-        font-size: 1.1rem;
-    }
-    #myButton{
-        font-size: 1.25rem;
-    }
-    #formButton{
-        font-size: 1.25rem;
     }
     .centered{
         font-size: 1.5rem;
     }
-    #me-img{
-        padding: 3rem;
+
+    /*Main Area Respoviness */
+    #mainHeader{
+        text-align: center;
+        padding: 0 10px;
     }
-    .paragraphs{
+    #mainHeader .background-text{
+        display: none;
+    }
+    #mainNavbar .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    /*AboutMe Resposivness*/
+    .aboutMeText{
         font-size: 1rem;
+    }
+    .textanimation span{
+        font-size: 1.1rem;
+    }
+    #me-img{
+        padding: 2rem;
+        padding-top: 3rem;
+    }
+
+    /*Buttons */
+    #myButton,
+    #formButton{
+        font-size: 1.25rem;
     }
 }
 
+/*Bootstrap XSmall - <576Px*/
 @media(max-width:385px){
+    /*General Respovinesses*/
     h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     h2{
         font-size: 1.5rem;
@@ -737,44 +752,44 @@ button[type="submit"]:hover{
     h3{
         font-size: 1rem;
     }
-    .margin{
-        margin-left: 0.5rem;
+    .paragraphs{
+        font-size: .75rem;
     }
+    .centered{
+        font-size: 1rem;
+    }
+
+    /*BackGround Text Respoviness */
     .special-background-text{
         font-size: 1rem;
     }
     .background-text{
         font-size: 0.75rem;
     }
+
+    /*Main Area Respoviness */
     #mainNavbar .navbar-brand {
-        color: var(--light-purple);
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     #mainNavbar .nav-link {
         font-size: 1.5rem;
     }
-    .centered{
-        font-size: 1rem;
-    }
-    #myButton{
-        font-size: 1rem;
-    }
+
+    /*Buttons */
+    #myButton,
     #formButton{
         font-size: 1rem;
+    }
+
+    /* About Me Respossivness */
+    #aboutMe p{
+        padding: 0 0.5rem;
     }
     #me-img{
         padding: 3rem;
     }
-    .paragraphs{
-        font-size: .75rem;
-    }
 }
-@media(max-width: 767px){
-    .site-grid {
-        margin-top: 0 px;
-        overflow-x: hidden;
-    }
-}
+
 
 
 /*KeyFrames */
