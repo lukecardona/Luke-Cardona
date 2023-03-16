@@ -1,155 +1,169 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@800&family=Roboto&display=swap');
 
-:root{
+:root {
     --background-color: #222831;
     --dark-purple: #AA2EE6;
     --nav-color: #212121;
     --light-purple: #AD62AA;
     --red: #E94560;
-    --success:#5cb85c;
+    --success: #5cb85c;
     --danger: #FA1E0E;
 }
-html{
+
+html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: var(--background-color);
     max-width: 100%;
     width: 100%;
     overflow-x: hidden;
 }
 
-h1{
+h1 {
     font-size: 6.5rem;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
 }
 
-h2{
+h2 {
     font-size: 6.5rem;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
     width: 100%;
 }
 
-h3{
+h3 {
     font-size: 2.5rem;
     font-weight: 600;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 3rem;
     padding-bottom: 20px;
     transition: all 0.2s ease;
 }
 
-h3:hover{
+h3:hover {
     transform: scale(102%);
     color: var(--red);
     cursor: pointer;
 }
 
-nav{
+nav {
     padding: 0;
     margin: 0;
 }
 
-footer{
+footer {
     text-align: center;
 }
 
 /* General Classes*/
-.white{
+.white {
     color: white;
 }
 
-.pink{
+.pink {
     color: var(--dark-purple);
 }
 
-.light-pink{
-    color:var(--light-purple);
+.light-pink {
+    color: var(--light-purple);
 }
 
-.black{
-    color:  var(--nav-color)
+.black {
+    color: var(--nav-color)
 }
 
-.margin-top{
+.margin-top {
     margin-top: 3rem;
 }
 
-.top-margin-lg{
+.top-margin-lg {
     margin-top: 45rem;
 }
 
-.margin{
+.margin {
     margin-left: 6rem;
 }
 
-.in-line{
+.in-line {
     margin: 0;
     padding: 0;
     display: inline-block;
 }
 
-.link{
+.link {
     text-decoration: none;
     font-weight: 500;
     transition: all .3s ease;
     cursor: pointer;
 }
 
-.link:hover{
+.link:hover {
     transform: scale(105%);
-    color:var(--red);
+    color: var(--red);
     text-decoration: underline;
 }
 
-.paragraphs{
+.paragraphs {
     font-size: 1.5rem;
     line-height: 1.8;
     font-family: "Roboto" sans-serif;
     position: relative;
 }
 
-.background-text{
-    color:#444444;
+.background-text {
+    color: #444444;
     font-weight: 200;
     font-size: 1.5rem;
     font-style: italic;
-    padding-right:0;
-    font-family: 'Dancing Script', cursive;;
+    padding-right: 0;
+    font-family: 'Dancing Script', cursive;
+    ;
 }
-.col{
-    padding-right:0 ;
+
+.col {
+    padding-right: 0;
 }
-.special-background-text{
-    color:#B2B1B9;
+
+.special-background-text {
+    color: #B2B1B9;
     font-weight: 500;
     font-size: 3rem;
     font-style: normal;
     font-family: 'Dancing Script', cursive;
 }
 
-.nameAnimation:hover{
+.nameAnimation:hover {
     cursor: pointer;
     color: var(--red);
     animation: rubberBand 1s;
 }
 
-.container-fluid{
-    padding:0;
+.container-fluid {
+    padding: 0;
     margin: 0;
 }
 
-.row{
+.row {
     width: 100%;
+}
+
+.flexHorizontalCenter {
+    justify-content: center;
+}
+
+.textCenter {
+    text-align: center;
 }
 
 /* End General Clsses*/
 /*Id's */
 
-#mainHeader{
+#mainHeader {
     margin-top: 4rem;
     padding-left: 0;
 }
@@ -168,7 +182,7 @@ footer{
 }
 
 #mainNavbar .nav-link:hover {
-    color:var(--light-purple);
+    color: var(--light-purple);
 }
 
 #mainNavbar .navbar-brand {
@@ -176,23 +190,23 @@ footer{
     font-size: 3rem;
 }
 
-#web-dev{
+#web-dev {
     animation: color-change 4s infinite alternate;
 }
 
-#aboutMe{
+#aboutMe {
     margin-top: 7rem;
-    padding:0;
+    padding: 0;
 }
 
-#me-img{
+#me-img {
     width: 50%;
     border-radius: 50%;
     display: block;
-    padding:0;
+    padding: 0;
 }
 
-#myButton{
+#myButton {
     font-size: 50px;
     font-family: "Roboto" sans-serif;
     padding: 0.25rem 4rem;
@@ -206,12 +220,12 @@ footer{
     transition: all 0.25s ease-in;
 }
 
-#myButton:hover{
+#myButton:hover {
     cursor: pointer;
     color: var(--nav-color);
 }
 
-#myButton:before{
+#myButton:before {
     transition: 0.4s all ease;
     position: absolute;
     top: 0;
@@ -220,106 +234,187 @@ footer{
     bottom: 0%;
     opacity: 0;
     content: "";
-    background-color: var(--dark-purple);
+    background-color: var(--light-purple);
 }
 
-#myButton:hover:before{
+#myButton:hover:before {
     transition: 0.4s all ease;
     left: 0;
-    right:0;
+    right: 0;
     opacity: 1;
     z-index: -1;
 }
 
-#recent-projects{
+#recent-projects {
     margin-top: 6rem;
 }
 
-#recent-projects h2{
+#recent-projects h2 {
     margin-bottom: 4rem;
 }
 
-#barHeader{
-    font-size:3rem;
+#barHeader {
+    font-size: 3rem;
     font-weight: 300;
+    text-align: center;
     cursor: pointer;
     transition: all .3s;
 }
 
 #barHeader:hover,
-.learning:hover{
+.learning:hover {
     color: var(--red);
 }
 
-#mySkills{
+#mySkills {
     margin-top: 9rem;
 }
- /*End Id's*/
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: var(--dark-purple);
+    text-underline-offset: 15px;
+    text-decoration-thickness: 1px;
+}
+
+/*End Id's*/
 
 
 
 /* To be fixed */
 .navbar.scrolled {
-    background: rgb(222,192,222);
+    background: rgb(222, 192, 222);
     transition: background 500ms;
 }
 
- /* About Me */
-.me-img-container{
-    padding:0;
+/* About Me */
+.me-img-container {
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.aboutMeText{
+.aboutMeText {
     font-size: 1.5rem;
     line-height: 1.8;
     font-family: "Roboto" sans-serif;
     position: relative;
 }
 
-.textanimation span{
+.textanimation span {
     color: #FF5F40;
     font-size: 1.75rem;
     transition: all;
 }
 
-.aboutMeText span:nth-child(149){
+.aboutMeText span:nth-child(149) {
     display: block;
     padding: 15px 0;
 }
- /*End About Me*/
 
- /*About Me side Page */
+/*End About Me*/
 
- #aboutMeSidePage{
-     margin-top: 0rem;
- }
+/*About Me side Page */
 
- /*Skills */
- .progress{
-     width: 90%;
- }
+#aboutMeSidePage {
+    margin-top: 0rem;
+}
 
- .bar-text{
+#aboutMeChangingText {
+    margin-top: 4rem;
+}
+
+#whatElseHeading {
+    margin-top: 5rem;
+}
+
+#aboutMeImages {
+    margin: 7rem 1rem;
+}
+
+#randomFacts {
+    border: solid white 2px;
+    border-radius: 4px;
+    padding: 4rem;
+}
+
+
+#getFactButton {
+    font-size: 50px;
+    font-family: "Roboto" sans-serif;
+    padding: 0.25rem 4rem;
+    border-radius: 5%;
+    color: var(--dark-purple);
+    background-color: var(--background-color);
+    box-shadow: none;
+    position: relative;
+    z-index: 1;
+    margin: 5rem 0rem;
+    width: 30%;
+    border: var(--dark-purple) solid 1px;
+    transition: all 0.25s ease-in;
+}
+
+#getFactButton:hover {
+    cursor: pointer;
+    color: var(--nav-color);
+}
+
+#getFactButton:before {
+    transition: 0.4s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0%;
+    opacity: 0;
+    content: "";
+    background-color: var(--dark-purple) !important;
+}
+
+#getFactButton:hover:before {
+    transition: 0.4s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+/*Skills */
+.progress {
+    width: 90%;
+    padding: 0px;
+}
+
+.newSkillsRow {
+    margin: 3rem
+}
+
+
+.newSkillsRow .bar-text {
+    margin-top: 0.75rem;
+}
+
+.bar-text {
     font-size: 2rem;
     padding: 15px 0;
     font-family: "Roboto" sans-serif;
 }
-.learning{
+
+.learning {
     transition: all .3s;
     cursor: pointer;
 }
 
- /*End My Skills */
- /*My Work*/
-.imgContainer{
-    display:flex;
+/*End My Skills */
+/*My Work*/
+.imgContainer {
+    display: flex;
     justify-content: center;
 }
 
-.projectImg{
+.projectImg {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -330,18 +425,18 @@ footer{
     cursor: pointer;
 }
 
-.projectImg:hover{
+.projectImg:hover {
     opacity: 85%;
 }
 
-.projects{
+.projects {
     position: relative;
     text-align: center;
-    color: var(--dark-purple);
+    color: var(--background-color);
 }
 
-.centered{
-    padding:0;
+.centered {
+    padding: 0;
     margin: 0;
     cursor: default;
     position: absolute;
@@ -353,52 +448,53 @@ footer{
     font-family: "Roboto", sans-serif;
 }
 
-.projects{
+.projects {
     transition: all .2s ease-in;
 }
 
-.projects:hover{
+.projects:hover {
     color: white;
     font-size: 4rem;
     font-weight: 900;
 }
-.comingSoon{
+
+.comingSoon {
     transition: all .3s ease;
 }
 
-.comingSoon:hover{
+.comingSoon:hover {
     opacity: 30%;
 }
 
- /*End My Work*/
+/*End My Work*/
 
- /*Contact me*/
-#contactQuestions{
+/*Contact me*/
+#contactQuestions {
     margin-left: 0;
-    padding-right:6rem;
+    padding-right: 6rem;
     text-align: justify;
- }
+}
 
-#contactQuestions h3{
+#contactQuestions h3 {
     text-align: left;
 }
 
- /* Form */
-#form-section{
+/* Form */
+#form-section {
     margin-top: 10rem;
     width: 100%;
     margin-bottom: 4rem;
 }
 
-#final-text{
+#final-text {
     margin-left: 0;
 }
 
-#formButton{
+#formButton {
     transition: 0.15s all ease-in-out;
 }
 
-.form-container{
+.form-container {
     width: 75%;
     padding: 20px;
     max-width: 1200px;
@@ -407,14 +503,14 @@ footer{
     margin-bottom: 20px;
 }
 
-.form-group{
+.form-group {
     width: 100%;
     margin-top: 1rem;
     font-size: 1.5rem;
 }
 
 .form-group input,
-.form-group textarea{
+.form-group textarea {
     width: 100%;
     padding: 5px;
     font-size: 18px;
@@ -425,15 +521,15 @@ footer{
 }
 
 input:placeholder-shown,
-textarea:placeholder-shown{
+textarea:placeholder-shown {
     font-style: italic;
 }
 
-textarea{
-    resize:none;
+textarea {
+    resize: none;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     width: 100%;
     outline: none;
     padding: 20px;
@@ -448,12 +544,12 @@ button[type="submit"]{
     transition: .3s ease background-color transform;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
     background-color: var(--dark-purple);
     transform: scale(99%);
 }
 
-#status{
+#status {
     width: 90%;
     text-align: center;
     padding: 10px;
@@ -461,14 +557,14 @@ button[type="submit"]:hover{
     border-radius: 8px;
 }
 
-#status.success{
-    background-color:var(--success);
+#status.success {
+    background-color: var(--success);
     animation: status 4s ease forwards;
 }
 
-#status.error{
+#status.error {
     color: white;
-    background-color:var(--danger);
+    background-color: var(--danger);
     animation: status 4s ease forwards;
 }
 
@@ -478,70 +574,305 @@ button[type="submit"]:hover{
     position: fixed;
     bottom: 0;
     left: 50%;
-    margin-left:-20px;
+    margin-left: -20px;
     width: 40px;
     height: 40px;
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
     background-size: contain;
-  }
+}
 
-  .arrow:first-child {
+.arrow:first-child {
     bottom: 20px;
     opacity: 0.3;
-  }
-  
-  .pulse:not(:first-child){
+}
+
+.pulse:not(:first-child) {
     opacity: 1;
     animation-delay: .3s;
-  }
-  .pulse {
+}
+
+.pulse {
     opacity: 0.3;
     animation: pulse 2s infinite;
-  }
+}
 
+
+/*TimeLine Page*/
+.timeline {
+    position: relative;
+    background: var(--background-color);
+    border: white 1px solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5rem;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-right: 2px dashed var(--dark-purple);
+    height: 100%;
+    display: block;
+}
+
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-row .timeline-time {
+    position: absolute;
+    right: 50%;
+    top: 15px;
+    text-align: right;
+    margin-right: 20px;
+    color: var(--light-purple);
+    font-size: 1.5rem;
+}
+
+.timeline-row .timeline-time small {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.timeline-row .timeline-content {
+    position: relative;
+    padding: 20px 30px;
+    background: var(--success);
+    /*Change Color here and pass it as a class variable*/
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.timeline-row .timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+    background: var(--light-purple);
+}
+
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -49px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 10;
+    background: var(--background-color);
+    border: dashed var(--dark-purple);
+}
+
+.timeline-row .timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 150%;
+}
+
+.timeline-row .timeline-content p {
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+
+.timeline-row .timeline-content i {
+    font-size: 1.2rem;
+    line-height: 100%;
+    padding: 15px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #272e48;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.timeline-row .timeline-content .thumbs {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.timeline-row .timeline-content .thumbs img {
+    margin: 5px;
+    max-width: 60px;
+}
+
+.timeline-row .timeline-content .badge {
+    color: #ffffff;
+    background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+}
+
+.timeline-row:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -8px;
+    right: initial;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(-135deg);
+}
+
+.timeline-row:nth-child(even) .timeline-content:before {
+    left: -52px;
+    right: initial;
+}
+
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+
+.timeline-row:nth-child(odd) .timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.timeline-row:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+}
+
+.timeline-row:nth-child(odd) .timeline-content:after {
+    right: -8px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+    .timeline {
+        padding: 15px;
+    }
+
+    .timeline:after {
+        border: 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) {
+        padding: 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content {
+        margin: 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content:before {
+        display: none;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+        display: none;
+    }
+
+    .timeline .timeline-row:nth-child(even) {
+        padding: 0;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+        text-align: left;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-content {
+        margin: 0;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-content:before {
+        display: none;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-content:after {
+        display: none;
+    }
+}
 
 /*media respoviness */
 
 /*BootStrap-XL +1100 px*/
-@media(max-width:1300px){
-    h1{
+@media(max-width:1300px) {
+    h1 {
         font-size: 5rem;
     }
-    h2{
+
+    h2 {
         font-size: 4.5rem;
     }
-    #barHeader{
-        font-size:2rem;
+
+    #barHeader {
+        font-size: 2rem;
     }
-    .bar-text{
+
+    .bar-text {
         font-size: 1rem;
     }
-    .paragraphs{
+
+    .paragraphs {
         font-size: 1.25rem;
     }
-    .textanimation span{
+
+    .textanimation span {
         font-size: 1.25rem;
     }
-    .aboutMeText{
+
+    .aboutMeText {
         font-size: 1.25rem;
+    }
+
+    .margin {
+        margin-left: 3rem;
     }
 }
 
 /*Small Respoviness Fixes */
-@media(max-width:1105px){
-    h1{
+@media(max-width:1105px) {
+    h1 {
         font-size: 4.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 4.5rem;
     }
 }
 
 /*Bootstrap lg - 992PX*/
-@media(max-width:992px){
+@media(max-width:992px) {
 
     /*Classes Connected with lg */
-    .noDisplay-lg{
+    .noDisplay-lg {
         display: none;
     }
 
@@ -551,7 +882,7 @@ button[type="submit"]:hover{
     #mySkills,
     #mySkillsPage,
     #recent-projects,
-    #form-section{
+    #form-section {
         text-align: center;
     }
 
@@ -560,7 +891,7 @@ button[type="submit"]:hover{
     #mySkills .background-text,
     #mySkillsPage .background-text,
     #recent-projects .background-text,
-    #form-section .background-text{
+    #form-section .background-text {
         display: none;
     }
 
@@ -568,202 +899,235 @@ button[type="submit"]:hover{
     #aboutMeSidePage h2,
     #mySkills h2,
     #mySkillsPage h2,
-    #recent-projects h2{
+    #recent-projects h2 {
         margin-bottom: 4rem;
     }
 
     /*General Respoviness*/
-    h3{
+    h3 {
         font-size: 2rem;
     }
 
-    .margin{
+    .margin {
         margin-left: 2.5rem;
     }
 
-    .paragraphs{
+    .paragraphs {
         font-size: 1.5rem;
     }
 
-    .centered{
+    .centered {
         font-size: 2rem;
     }
 
     /*BackGround Text Respoviness*/
 
-    .special-background-text{
+    .special-background-text {
         font-size: 1.5rem;
     }
-    .background-text{
+
+    .background-text {
         font-size: 1rem;
     }
 
     /*About Me Respoviness Main Page*/
 
-    #myText{
+    #myText {
         padding: 0 2rem;
     }
-    #audioText{
+
+    #audioText {
         display: inline !important;
     }
-    #me-img{
+
+    #me-img {
         padding: 5rem;
-        padding-top: 6rem;      
+        padding-top: 6rem;
     }
-    #myButton{
+
+    #myButton {
         font-size: 2rem;
     }
-    .aboutMeText{
+
+    .aboutMeText {
         font-size: 1.5rem;
     }
 
     /*My Skills Respoviness */
 
-    #mySkills{
-        margin-top:2rem;
+    #mySkills {
+        margin-top: 2rem;
     }
-    .progress{
-        width: 100%;
+
+    .newSkillsRow {
+        margin: 1rem
+    }
+
+    .newSkillsRow.progress {
+        width: 95%;
     }
 
     /*My Skills Page Respoviness */
-    
-    #mySkillsPage{
+
+    #mySkillsPage {
         margin-top: 2rem;
     }
 
     /*Projects Respoviness */
 
     /*Contact Me Responivness */
-    #form-section{
+    #form-section {
         margin-top: 5rem;
         margin-bottom: 0;
     }
-    #formButton{
+
+    #formButton {
         font-size: 2rem;
     }
-    #contactQuestions{
-        padding-right:2rem;
+
+    #contactQuestions {
+        padding-right: 2rem;
     }
+
     /*Form Responivness */
-    .form-container{
-        width:90%;
+    .form-container {
+        width: 90%;
         text-align: left;
         margin-bottom: 0;
     }
 }
 
 /*Bootstrap md - 768 px*/
-@media(max-width: 768px){
+@media(max-width: 768px) {
 
     /*General Respoviness*/
-    h3{
+    h3 {
         font-size: 1.75rem;
     }
-    .margin{
+
+    .margin {
         margin-left: 1rem;
     }
-    .paragraphs{
+
+    .paragraphs {
         font-size: 1.25rem;
     }
 
     /*About Me Respoviness */
-    .aboutMeText{
+    .aboutMeText {
         font-size: 1.25rem;
     }
-    .textanimation span{
+
+    .textanimation span {
         font-size: 1.25rem;
-    } 
-    #me-img{
+    }
+
+    #me-img {
         padding: 4rem;
-        padding-top: 5rem;    
+        padding-top: 5rem;
     }
 
     /*Buttons */
     #myButton,
-    #formButton{
+    #formButton {
         font-size: 1.5rem;
     }
 }
 
 /*Bootstrap Small - 576px */
 
-@media(max-width:576px){
+@media(max-width:576px) {
+
     /*General Respoviness*/
-    h1{
+    h1 {
         font-size: 3.9rem;
     }
-    h2{
+
+    h2 {
         font-size: 3.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.5rem;
     }
-    .margin{
+
+    .margin {
         margin-left: 0.5rem;
     }
-    .paragraphs{
+
+    .paragraphs {
         font-size: 1rem;
     }
-    .centered{
+
+    .centered {
         font-size: 1.5rem;
     }
 
     /*Main Area Respoviness */
-    #mainHeader{
+    #mainHeader {
         text-align: center;
         padding: 0 10px;
     }
-    #mainHeader .background-text{
+
+    #mainHeader .background-text {
         display: none;
     }
+
     #mainNavbar .navbar-brand {
         font-size: 2.5rem;
     }
 
     /*AboutMe Resposivness*/
-    .aboutMeText{
+    .aboutMeText {
         font-size: 1rem;
     }
-    .textanimation span{
+
+    .textanimation span {
         font-size: 1.1rem;
     }
-    #me-img{
+
+    #me-img {
         padding: 2rem;
         padding-top: 3rem;
     }
 
     /*Buttons */
     #myButton,
-    #formButton{
+    #formButton {
         font-size: 1.25rem;
     }
 }
 
 /*Bootstrap XSmall - <576Px*/
-@media(max-width:385px){
+@media(max-width:385px) {
+
     /*General Respovinesses*/
-    h1{
+    h1 {
         font-size: 2.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 1.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 1rem;
     }
-    .paragraphs{
+
+    .paragraphs {
         font-size: .75rem;
     }
-    .centered{
+
+    .centered {
         font-size: 1rem;
     }
 
     /*BackGround Text Respoviness */
-    .special-background-text{
+    .special-background-text {
         font-size: 1rem;
     }
-    .background-text{
+
+    .background-text {
         font-size: 0.75rem;
     }
 
@@ -771,21 +1135,23 @@ button[type="submit"]:hover{
     #mainNavbar .navbar-brand {
         font-size: 1.25rem;
     }
+
     #mainNavbar .nav-link {
         font-size: 1.5rem;
     }
 
     /*Buttons */
     #myButton,
-    #formButton{
+    #formButton {
         font-size: 1rem;
     }
 
     /* About Me Respossivness */
-    #aboutMe p{
+    #aboutMe p {
         padding: 0 0.5rem;
     }
-    #me-img{
+
+    #me-img {
         padding: 3rem;
     }
 }
@@ -794,62 +1160,76 @@ button[type="submit"]:hover{
 
 /*KeyFrames */
 @keyframes pulse {
-    0%  { opacity: 1;   }
-    90% { opacity: 0.3; }
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.3;
+    }
 }
-  
-@keyframes status{
-    0%{
+
+@keyframes status {
+    0% {
         opacity: 1;
         pointer-events: all;
     }
-    90%{
+
+    90% {
         opacity: 1;
         pointer-events: all;
     }
-    100%{
+
+    100% {
         opacity: 0;
         pointer-events: none;
     }
 }
 
-@keyframes rubberBand{
-    0%{
-        transform: scale3d(1,1,1);
+@keyframes rubberBand {
+    0% {
+        transform: scale3d(1, 1, 1);
     }
-    35%{
-        transform: scale3d(.75,1.25,1.25);
+
+    35% {
+        transform: scale3d(.75, 1.25, 1.25);
     }
-    45%{
-        transform: scale3d(1,.75,1);
+
+    45% {
+        transform: scale3d(1, .75, 1);
     }
-    60%{
-        transform: scale3d(0.8,1.2,1.2);
+
+    60% {
+        transform: scale3d(0.8, 1.2, 1.2);
     }
-    75%{
-        transform: scale3d(0.95,1.05,1.05);
+
+    75% {
+        transform: scale3d(0.95, 1.05, 1.05);
     }
-    100%{
-        transform: scale3d(1,1,1); 
+
+    100% {
+        transform: scale3d(1, 1, 1);
     }
 }
-@keyframes color-change{
-    0%{
+
+@keyframes color-change {
+    0% {
         color: crimson;
     }
 
-    25%{
-        color:#FF79CD;
+    25% {
+        color: #FF79CD;
     }
-    50%{
+
+    50% {
         color: #AA2EE6;
     }
 
-    75%{
+    75% {
         color: #FFDF6B;
     }
 
-    100%{
+    100% {
         color: #FF5F40;
     }
 }
