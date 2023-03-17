@@ -334,7 +334,7 @@ footer {
 }
 
 #randomFacts {
-    border: solid white 2px;
+    border: solid var(--light-purple) 2px;
     border-radius: 4px;
     padding: 4rem;
 }
@@ -598,6 +598,44 @@ button[type="submit"]:hover {
 
 
 /*TimeLine Page*/
+.backgroundGreen {
+    background: rgb(33, 189, 182);
+    background: linear-gradient(180deg, rgba(33, 189, 182, 1) 0%, rgba(32, 231, 162, 1) 41%, rgba(0, 255, 188, 1) 100%);
+}
+
+.backgroundUni {
+    color: white;
+    background: rgb(186, 31, 60);
+    background: linear-gradient(180deg, rgba(186, 31, 60, 1) 0%, rgba(219, 50, 82, 1) 59%, rgba(255, 185, 196, 1) 100%);
+}
+
+.backgroundKPMG {
+    color: white;
+    background: rgb(33, 68, 219);
+    background: linear-gradient(180deg, rgba(33, 68, 219, 1) 0%, rgba(112, 21, 226, 1) 100%);
+}
+
+.badgeSoftSkills {
+    background: rgb(219, 201, 33);
+    background: linear-gradient(180deg, rgba(219, 201, 33, 1) 0%, rgba(226, 21, 21, 1) 100%);
+}
+
+.badgeWaiter {
+    background: rgb(33, 71, 219);
+    background: linear-gradient(180deg, rgba(33, 71, 219, 1) 0%, rgba(132, 226, 21, 1) 100%);
+}
+
+.badgeUni {
+    background: rgb(133, 33, 219);
+    background: linear-gradient(180deg, rgba(133, 33, 219, 1) 0%, rgba(226, 21, 221, 1) 100%);
+}
+
+.badgeKPMG {
+    background: rgb(33, 215, 219);
+    background: linear-gradient(180deg, rgba(33, 215, 219, 1) 0%, rgba(96, 21, 226, 1) 100%);
+}
+
+
 .timeline {
     position: relative;
     background: var(--background-color);
@@ -645,8 +683,6 @@ button[type="submit"]:hover {
 .timeline-row .timeline-content {
     position: relative;
     padding: 20px 30px;
-    background: var(--success);
-    /*Change Color here and pass it as a class variable*/
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -718,7 +754,7 @@ button[type="submit"]:hover {
 
 .timeline-row .timeline-content .badge {
     color: #ffffff;
-    background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+    /* background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%); */
 }
 
 .timeline-row:nth-child(even) .timeline-content {
