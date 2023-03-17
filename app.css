@@ -60,6 +60,10 @@ footer {
     text-align: center;
 }
 
+div {
+    overflow: hidden;
+}
+
 /* General Classes*/
 .white {
     color: white;
@@ -127,6 +131,10 @@ footer {
 
 .col {
     padding-right: 0;
+}
+
+.flex {
+    display: flex;
 }
 
 .special-background-text {
@@ -999,6 +1007,11 @@ button[type="submit"]:hover {
         margin: 1rem
     }
 
+    #getFactButton {
+        width: 60%;
+        font-size: 30px;
+    }
+
     .newSkillsRow.progress {
         width: 95%;
     }
@@ -1007,6 +1020,15 @@ button[type="submit"]:hover {
 
     #mySkillsPage {
         margin-top: 2rem;
+    }
+
+    #sideSkillsTab {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 3rem;
+        overflow: hidden;
     }
 
     /*Projects Respoviness */
