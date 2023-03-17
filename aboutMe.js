@@ -80,8 +80,21 @@ const r11 = "Currently a certified first aider, but please, contain the exciteme
 
 const randomList = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11]
 const randomFacts = document.getElementById("randomFacts")
-
+var prevFacts = [1, 2, 3]
 function generateRandomFact() {
+    present = false
     randomNum = Math.floor((Math.random() * randomList.length));
-    randomFacts.innerText = randomList[randomNum]
+    for (i = 0; i < prevFacts.length; i++) {
+        if (prevFacts[i] == randomNum) {
+            present = true
+            generateRandomFact()
+            break
+        }
+    }
+
+    if (!present) {
+        prevFacts.shift()
+        prevFacts.push(randomNum)
+        randomFacts.innerText = randomList[randomNum]
+    }
 }
