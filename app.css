@@ -119,6 +119,15 @@ div {
     position: relative;
 }
 
+.article-paragraphs {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: "Roboto" sans-serif;
+    position: relative;
+    width: 95%;
+    text-align: justify;
+}
+
 .background-text {
     color: #444444;
     font-weight: 200;
@@ -475,6 +484,21 @@ div {
 }
 
 /*End My Work*/
+
+/* Articles */
+
+.article-image {
+    margin-top: 5rem;
+}
+
+.article-image-caption {
+    margin-bottom: 5rem;
+}
+
+
+/* End Articles*/
+
+
 
 /*Contact me*/
 #contactQuestions {
@@ -1117,6 +1141,10 @@ button[type="submit"]:hover {
         font-size: 1.25rem;
     }
 
+    .article-paragraphs {
+        font-size: 1.25rem;
+    }
+
     .textanimation span {
         font-size: 1.25rem;
     }
@@ -1186,6 +1214,10 @@ button[type="submit"]:hover {
     }
 
     .paragraphs {
+        font-size: 1.5rem;
+    }
+
+    .article-paragraphs {
         font-size: 1.5rem;
     }
 
@@ -1300,6 +1332,10 @@ button[type="submit"]:hover {
         font-size: 1.25rem;
     }
 
+    .article-paragraphs {
+        font-size: 1.25rem;
+    }
+
     /*About Me Respoviness */
     .aboutMeText {
         font-size: 1.25rem;
@@ -1343,6 +1379,10 @@ button[type="submit"]:hover {
     }
 
     .paragraphs {
+        font-size: 1rem;
+    }
+
+    .article-paragraphs {
         font-size: 1rem;
     }
 
@@ -1402,6 +1442,10 @@ button[type="submit"]:hover {
     }
 
     .paragraphs {
+        font-size: .75rem;
+    }
+
+    .article-paragraphs {
         font-size: .75rem;
     }
 
