@@ -8,7 +8,6 @@ $(function () {
 });
 
 
-
 /*Audio Section */
 const text = document.getElementById("myText");
 const speech = new Audio("Me.mp3");
@@ -37,13 +36,40 @@ rubberband.forEach(rubberband => {
         .map((letter, idx) => `<span class="nameAnimation in-line" data-aos="fade-down"
         data-aos-delay="${idx * 50}" data-aos-duration="800">${letter}</span>`)
         .join("")
+
+
+    // rubberband.addEventListener('mouseover', () => {
+    //     console.log("Element is being hovered");
+    // });
 })
+
+// function playAnimationRubberband(rubberBandElement){
+//     if (rubberBandElement.classList.contains("rubberBandAnimation") == false) {
+//         rubberBandElement.classList.add
+//     }
+// }
+const rubberBandLetters = document.querySelectorAll(".nameAnimation")
+
+rubberBandLetters.forEach(letter => {
+    $(letter).on({
+        mouseenter() {
+            $(this).addClass("rubberBandAnimation");
+        },
+        animationend() {
+            $(this).removeClass("rubberBandAnimation");
+        },
+    });
+});
 
 /*Adding Animation Class */
 function textEffect() {
     const text = document.getElementById("myText");
     text.classList.add("textanimation");
 }
+
+/* Fixing RubberBand */
+
+let rubberbandText = document.getElementsByClassName("nameAnimation");
 
 /*Button Music*/
 function playMusic() {
@@ -93,7 +119,8 @@ $(window).scroll(function () {
     }
 });
 
-window.addEventListener("scroll", scrollEventHandler, false);
+// window.addEventListener("scroll", scrollEventHandler, false);
+
 //Form Submit
 var form = document.getElementById("contact-me");
 

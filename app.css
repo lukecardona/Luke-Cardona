@@ -148,7 +148,11 @@ div {
 .nameAnimation:hover {
     cursor: pointer;
     color: var(--red);
-    animation: rubberBand 1s;
+
+}
+
+.rubberBandAnimation {
+    animation: rubberBand 1s forwards;
 }
 
 .container-fluid {
@@ -1251,6 +1255,7 @@ button[type="submit"]:hover {
 
     35% {
         transform: scale3d(.75, 1.25, 1.25);
+        color: var(--red);
     }
 
     45% {
@@ -1259,6 +1264,7 @@ button[type="submit"]:hover {
 
     60% {
         transform: scale3d(0.8, 1.2, 1.2);
+        color: var(--red);
     }
 
     75% {
