@@ -265,7 +265,9 @@ div {
 
 #myButton {
     font-size: 50px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    letter-spacing: 0.3rem;
     padding: 0.25rem 4rem;
     border-radius: 20px;
     color: var(--dark-purple);
@@ -394,26 +396,30 @@ div {
 
 #getFactButton {
     font-size: 50px;
-    font-family: "Roboto" sans-serif;
-    padding: 0.25rem 4rem;
-    border-radius: 5%;
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
     color: var(--dark-purple);
     background-color: var(--background-color);
     box-shadow: none;
     position: relative;
     z-index: 1;
-    margin: 5rem 0rem;
+    margin-bottom: 2rem;
     width: 30%;
-    border: var(--dark-purple) solid 1px;
+    border: var(--dark-purple) solid 3px;
     transition: all 0.25s ease-in;
 }
 
 #getFactButton:hover {
     cursor: pointer;
     color: var(--nav-color);
+    border: var(--light-purple) solid 3px;
 }
 
 #getFactButton:before {
+    border-radius: 15px;
     transition: 0.4s all ease;
     position: absolute;
     top: 0;
@@ -422,7 +428,7 @@ div {
     bottom: 0%;
     opacity: 0;
     content: "";
-    background-color: var(--dark-purple) !important;
+    background-color: var(--light-purple);
 }
 
 #getFactButton:hover:before {
@@ -612,6 +618,10 @@ button[type="submit"] {
     cursor: pointer;
     margin-top: 10px;
     transition: .3s ease background-color transform;
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+
 }
 
 button[type="submit"]:hover {
