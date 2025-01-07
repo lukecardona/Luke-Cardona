@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --background-color: #222831;
@@ -32,14 +35,14 @@ h1 {
 h2 {
     font-size: 6.5rem;
     font-weight: 900;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     width: 100%;
 }
 
 h3 {
     font-size: 2.5rem;
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     margin-top: 3rem;
     padding-bottom: 20px;
     transition: all 0.2s ease;
@@ -49,6 +52,7 @@ h3:hover {
     transform: scale(102%);
     color: var(--red);
     cursor: pointer;
+    padding-left: 1rem;
 }
 
 nav {
@@ -90,7 +94,7 @@ div {
 }
 
 .margin {
-    margin-left: 6rem;
+    margin-left: 5rem;
 }
 
 .in-line {
@@ -115,7 +119,10 @@ div {
 .paragraphs {
     font-size: 1.5rem;
     line-height: 1.8;
-    font-family: "Roboto" sans-serif;
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     position: relative;
 }
 
@@ -163,12 +170,40 @@ div {
     width: 100%;
 }
 
+.divideEven {
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
 .flexHorizontalCenter {
     justify-content: center;
 }
 
+.flexCenter {
+    justify-content: center;
+    align-items: center;
+}
+
 .textCenter {
     text-align: center;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.spread {
+    justify-content: space-evenly;
 }
 
 /* End General Clsses*/
@@ -201,9 +236,13 @@ div {
     font-size: 3rem;
 }
 
+/* HomePage.css */
+
 #web-dev {
     animation: color-change 4s infinite alternate;
 }
+
+/*About Me */
 
 #aboutMe {
     margin-top: 7rem;
@@ -211,17 +250,24 @@ div {
 }
 
 #me-img {
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
-    display: block;
-    padding: 0;
+}
+
+.me-img-container {
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
+    position: relative;
 }
 
 #myButton {
     font-size: 50px;
     font-family: "Roboto" sans-serif;
     padding: 0.25rem 4rem;
-    border-radius: 5%;
+    border-radius: 20px;
     color: var(--dark-purple);
     background-color: var(--background-color);
     box-shadow: none;
@@ -234,10 +280,12 @@ div {
 #myButton:hover {
     cursor: pointer;
     color: var(--nav-color);
+    border: var(--light-purples) solid 1px;
 }
 
 #myButton:before {
     transition: 0.4s all ease;
+    border-radius: 19px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -246,9 +294,12 @@ div {
     opacity: 0;
     content: "";
     background-color: var(--light-purple);
+    border: var(--light-purples) solid 1px;
 }
 
 #myButton:hover:before {
+    border-radius: 19px;
+    border: var(--light-purples) solid 1px;
     transition: 0.4s all ease;
     left: 0;
     right: 0;
@@ -290,20 +341,10 @@ div {
 
 /*End Id's*/
 
-
-
 /* To be fixed */
 .navbar.scrolled {
     background: rgb(222, 192, 222);
     transition: background 500ms;
-}
-
-/* About Me */
-.me-img-container {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .aboutMeText {
@@ -315,11 +356,11 @@ div {
 
 .textanimation span {
     color: #FF5F40;
-    font-size: 1.75rem;
+    /* font-size: 1.75rem; */
     transition: all;
 }
 
-.aboutMeText span:nth-child(149) {
+.aboutMeText span:nth-child(146) {
     display: block;
     padding: 15px 0;
 }
@@ -516,7 +557,19 @@ div {
 .form-group {
     width: 100%;
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.form-group label {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.form-group label:first-child {
+    padding-top: 0;
 }
 
 .form-group input,
@@ -524,10 +577,17 @@ div {
     width: 100%;
     padding: 5px;
     font-size: 18px;
-    border: 1px solid var(--light-purple);
+    border: 3px solid var(--light-purple);
     margin-top: 10px;
     color: white;
     background-color: #2B2B2B;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 3px solid #5cb85c;
+    outline: none;
+    box-shadow: none;
 }
 
 input:placeholder-shown,
@@ -555,7 +615,8 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: var(--dark-purple);
+    background-color: var(--light-purple);
+    border: 2px solid var(--light-purple);
     transform: scale(99%);
 }
 
@@ -718,9 +779,6 @@ button[type="submit"]:hover {
 
     /*About Me Respoviness Main Page*/
 
-    #myText {
-        padding: 0 2rem;
-    }
 
     #audioText {
         display: inline !important;
