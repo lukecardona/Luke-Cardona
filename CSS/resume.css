@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
 :root {
-    --adoblue: #1A1A1D;
+    --adoblue: #222831;
     --bluePrim: #548CFF;
     --greenPrim: #93FFD8;
     --purplePrim: #7900ff;
@@ -8,7 +12,30 @@
     --resumeTitlePrimary: #548CFF;
     --resumeTitleSecondary: #93FFD8;
     /* --borderColor: rgba(121, 0, 255, 0.5); */
+    --background-color: #222831;
+    --dark-purple: #AA2EE6;
+    --nav-color: #212121;
+    --light-purple: #AD62AA;
+    --red: #E94560;
+    --success: #5cb85c;
+    --danger: #FA1E0E;
 }
+
+body {
+    background-color: var(--background-color);
+    color: white;
+    word-wrap: break-word;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 3rem;
+    padding-bottom: 20px;
+    transition: all 0.2s ease;
+}
+
 
 #leftColumn {
     border-right: 2px solid var(--borderColor);
@@ -22,18 +49,52 @@
     text-align: left;
 }
 
+#mainNavbar {
+    font-size: 1.9rem;
+    font-weight: 100;
+    padding: 0 1rem;
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: var(--light-purple);
+}
+
+#mainNavbar .navbar-brand {
+    color: var(--light-purple);
+    font-size: 3rem;
+}
+
+.black {
+    color: var(--nav-color)
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: var(--dark-purple);
+    text-underline-offset: 15px;
+    text-decoration-thickness: 1px;
+}
+
 .resumeHeaderSide,
 .resumeHeader {
     border-bottom: 2px solid var(--borderColor);
     padding-left: 5px;
-    font-family: "DM Sans", serif;
-    font-weight: 900;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: clamp(0.4rem 2rem 3rem);
     padding-bottom: 10px;
     margin-top: 0;
     color: var(--greenPrim);
+
 }
 
 .resumeHeaderSide {
@@ -65,6 +126,17 @@
     margin-left: 20px;
     padding-left: 10px;
     padding: 10px 20px;
+}
+
+
+.bullet {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-family: "Jost", serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
 }
 
 .resumeList ul li:last-child {
@@ -100,7 +172,23 @@
 
 }
 
+.link {
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.link:hover {
+    transform: scale(105%);
+    color: var(--red);
+    text-decoration: underline;
+}
+
 .resumeList ul li h4 {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     margin-top: 5px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -121,6 +209,7 @@
     font-variation-settings:
         "BLED" 0,
         "SCAN" 0;
+    margin-top: 2rem;
 }
 
 #jobOccupationTitle {
@@ -209,12 +298,93 @@ li::marker {
     width: 20%;
 }
 
-p {
-    font-size: clamp(0.25rem, 2vw, 1rem);
+.image {
+    margin: 0;
 }
 
-li {
-    font-size: clamp(0.25rem, 2vw, 1rem);
+.flex {
+    display: flex;
+}
+
+.paragraph {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.paragraphSmall {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    font-family: "Jost", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.divideEven {
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.imageContainer {
+    margin: 5%;
+    max-width: 20vh;
+    width: 100%;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.fixed {
+    position: sticky;
+}
+
+.row {
+    width: 100%;
+}
+
+.spread {
+    justify-content: space-evenly;
+}
+
+.roundImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Tablet screens (768px and below) */
