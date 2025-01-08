@@ -1,0 +1,269 @@
+:root {
+    --adoblue: #1A1A1D;
+    --bluePrim: #548CFF;
+    --greenPrim: #93FFD8;
+    --purplePrim: #7900ff;
+    /* --borderColor: rgba(84, 140, 255, 0.5); */
+    --borderColor: rgba(147, 255, 216, 0.5);
+    --resumeTitlePrimary: #548CFF;
+    --resumeTitleSecondary: #93FFD8;
+    /* --borderColor: rgba(121, 0, 255, 0.5); */
+}
+
+#leftColumn {
+    border-right: 2px solid var(--borderColor);
+    height: 100vh;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.resumeItem {
+    padding: 5px 3vw;
+    text-align: left;
+}
+
+.resumeHeaderSide,
+.resumeHeader {
+    border-bottom: 2px solid var(--borderColor);
+    padding-left: 5px;
+    font-family: "DM Sans", serif;
+    font-weight: 900;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(0.4rem 2rem 3rem);
+    padding-bottom: 10px;
+    margin-top: 0;
+    color: var(--greenPrim);
+}
+
+.resumeHeaderSide {
+    text-align: left;
+}
+
+.resumeContent {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.resumeContent p {
+    margin-bottom: 0;
+}
+
+.resumeList ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.resumeList ul li {
+    color: white;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding: 10px 20px;
+}
+
+.resumeList ul li:last-child {
+    padding-bottom: 0;
+}
+
+.resumeList ul li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    /* Position the bullet */
+    top: 50%;
+    /* Vertically align the bullet */
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--greenPrim);
+    border-radius: 50%;
+}
+
+.resumeList ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: -13px;
+    /* Position the line relative to the bullet */
+    top: calc(50% + 7px);
+    /* Start from the bottom of the bullet */
+    width: 2px;
+    /* Thickness of the line */
+    height: calc(100% - 14px);
+    /* Line height */
+    background-color: var(--greenPrim);
+
+}
+
+.resumeList ul li h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--bluePrim);
+}
+
+.resumeList ul li p {
+    margin-top: 5px;
+}
+
+#nameTitle {
+    text-align: center;
+    font-family: "Sixtyfour", serif;
+    font-optical-sizing: auto;
+    font-size: clamp(1rem, 5vw, 4rem);
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0;
+}
+
+#jobOccupationTitle {
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+    font-weight: 400;
+}
+
+li::marker {
+    color: var(--greenPrim);
+}
+
+#LukeWord {
+    color: var(--resumeTitlePrimary)
+}
+
+#cardonaWord {
+    color: var(--resumeTitleSecondary);
+}
+
+.skillList {
+    flex-wrap: wrap;
+}
+
+.skillList:first-child {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.skillItem {
+    background-color: var(--bluePrim);
+    color: white;
+    align-self: center;
+    font-weight: bold;
+    padding: 7px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.skillBlue {
+    background-color: var(--bluePrim);
+    color: white;
+}
+
+.skillGreen {
+    background-color: var(--greenPrim);
+    color: var(--adoblue);
+}
+
+.skillPurple {
+    background-color: var(--purplePrim);
+    color: white;
+}
+
+.fa-linkedin,
+.fa-envelope {
+    color: white;
+    padding-right: 5px;
+}
+
+#contactMe {
+    list-style: none;
+    padding-left: 25px;
+}
+
+#leftColumn li {
+    margin: 20px 0;
+}
+
+#rightColumn {
+    width: 100%;
+}
+
+.blue {
+    color: var(--bluePrim)
+}
+
+.sticky {
+    position: sticky !important;
+    align-self: flex-start;
+    top: 0;
+    width: 20%;
+}
+
+p {
+    font-size: clamp(0.25rem, 2vw, 1rem);
+}
+
+li {
+    font-size: clamp(0.25rem, 2vw, 1rem);
+}
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    .sticky {
+        width: 25%;
+    }
+
+    #rightColumn {
+        width: 75%;
+    }
+
+    #leftColumn #contactMe {
+        padding-left: 10px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    .skillItem {
+        font-size: 0.7rem;
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .sticky {
+        width: 30%;
+    }
+
+    #rightColumn {
+        width: 70%;
+    }
+
+    #leftColumn {
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    #contactMe {
+        padding-left: 5px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    .skillItem {
+        font-size: 0.4rem;
+    }
+}
