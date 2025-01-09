@@ -10,6 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/app.css">
+    <link rel="stylesheet" href="CSS/aboutMe.css">
     <link rel="icon" href="Images/Icon.png">
 </head>
 
@@ -47,16 +48,12 @@
                         </h2>
                     </div>
                     <p id="myText" class="white aboutMeText paragraphs margin">
-                        Yo yo o/, let me introduce myself, I’m Luke a Maltese developer that completed an
-                        Artificial Intelligence (Bachelors) in the University of Malta. My coding adventure started with
-                        Unity where at the age of 16 I was inspired to pursue game development. I dropped game
-                        development in 2020 as I got more inspired working with AI technologies and data Science. I am
-                        quite the curious and adventurous individual and I yearn to expand my skills and gather as much
-                        knowledge & experiences as possible.
-                    </p>
-
-                    <p class="margin white paragraphs">Find out more <a href="aboutMe.html" class="pink link">About
-                            Me here!</a>
+                        Yo yo o/, let me introduce myself, I’m Luke, a Maltese developer who completed a
+                        Bachelors in Artificial Intelligence at the University of Malta. My coding adventure started
+                        with Unity, where at the age of 16, I was inspired to pursue game development. I dropped game
+                        development in 2020 as I got more inspired working with AI technologies and Data Science. I am
+                        quite the curious and adventurous individual. I yearn to expand my skills and gather as much
+                        knowledge and experiences as possible.
                     </p>
 
                     <button id="myButton" class="button margin" type="button" onclick="playMusic()">
@@ -84,11 +81,46 @@
             <p class="white paragraphs textCenter"> It seems like you can't get enough! <br><br></p>
             <button id="getFactButton" class="button" type="button" onclick="generateRandomFact()">Get Fact</button>
             <p id="randomFacts" style="width:90%" class="white paragraphs textCenter">
-
                 Press the button to generate a random fact about me! Try it, come on don't be shy :D
             </p>
         </div>
     </section>
+
+    <div class="flex row">
+        <div class="flex container horizontal spread">
+            <div id="Hobbies" class="card">Hobbies</div>
+            <div id="Song" class="card">Favourite Song</div>
+            <div id="Movie" class="card">Favourite Movie</div>
+            <div id="Game" class="card">Favourite Game</div>
+        </div>
+        <div class="flex container horizontal spread">
+            <div id="Coding" class="card">Coding Journey</div>
+            <div id="Pineapple" class="card">Pineapple on pizza?</div>
+            <div id="Travel" class="card">Travelling</div>
+            <div id="Challenge" class="card">Challenge</div>
+        </div>
+        <div class="flex container horizontal spread">
+            <div id="Hobbies2" class="card">Hobbies II</div>
+            <div id="Unique" class="card">Something Unique</div>
+            <div id="AI" class="card">Why AI? </div>
+            <div id="Sanity" class="card">Keeps me sane</div>
+        </div>
+        <div class="flex container horizontal spread">
+            <div id="Fact" class="card">Fun Fact</div>
+            <div id="Anime" class="card">Favourite Anime</div>
+            <div id="Exercise" class="card">Excersice </div>
+            <div id="Dream" class="card">The Dream</div>
+        </div>
+    </div>
+
+    <div id="flippedCard" class="fullpage container hide">
+        <div class="flex container fullCardWrapper">
+            <div id="flexCardFlipped" class="flex container vertical flexCardFlipped">
+                <h2 id="cardTitle">Card Title</h2>
+                <p id="cardContent">YOOYOY</p>
+            </div>
+        </div>
+    </div>
 
     <div class="margin-top"></div>
 
@@ -113,6 +145,7 @@
 
     <!--My Script-->
     <script src="JS/script.js"></script>
+    <script src="JS/cardLogic.js"></script>
     <script src="JS/aboutMe.js"></script>
     <script src="JS/audioButton.js"></script>
 </body>

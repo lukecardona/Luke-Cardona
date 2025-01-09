@@ -1,0 +1,109 @@
+:root {
+    --bluePrim: #548CFF;
+    --greenPrim: #93FFD8;
+    --purplePrim: #7900ff;
+    /* --borderColor: rgba(84, 140, 255, 0.5); */
+    --borderColor: rgba(147, 255, 216, 0.5);
+    --resumeTitlePrimary: #548CFF;
+    --resumeTitleSecondary: #93FFD8;
+    --background-color: #222831;
+    --dark-purple: #AA2EE6;
+    --nav-color: #212121;
+    --light-purple: #AD62AA;
+    --red: #E94560;
+    --success: #5cb85c;
+    --danger: #FA1E0E;
+    /* --borderColor: rgba(121, 0, 255, 0.5); */
+}
+
+.fullPage {
+    width: 100%
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.wrapper {
+    flex-wrap: wrap;
+}
+
+.spread {
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+}
+
+.card {
+    content: "";
+    width: 100%;
+    height: auto;
+    margin: 1em;
+    padding: 0.25em;
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, var(--light-purple), #548CFF, var(--greenPrim));
+    box-shadow: 2px 2px 5px #0ab1ff;
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 5px #0ab1ff;
+    cursor: pointer;
+}
+
+#flippedCard {
+    position: absolute;
+    top: 0;
+}
+
+.fullCardWrapper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexCardFlipped {
+    align-self: center;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    height: 80%;
+    width: 80%;
+    background-image: linear-gradient(to bottom right, #fd0800, #d38c20, #eba30a);
+    border-radius: 40px;
+    opacity: 95%;
+    z-index: 1;
+}
+
+#cardContent {
+    font-size: 1.25em;
+    padding: 0 25px;
+    text-align: justify;
+}
+
+.hide {
+    opacity: 0%;
+}
+
+.show {
+    opacity: 100%;
+}
+
+.shown {
+    background-image: linear-gradient(to bottom right, #fd0800, #d38c20, #eba30a);
+    box-shadow: 2px 2px 5px #ecb70a;
+}
+
+.shown:hover {
+    box-shadow: 4px 4px 5px #ecb70a;
+}
