@@ -352,6 +352,10 @@ div {
     color: var(--red);
 }
 
+#mySkillsPage {
+    margin-top: 5rem;
+}
+
 #mySkills {
     margin-top: 9rem;
 }
@@ -413,6 +417,10 @@ div {
     border: solid var(--light-purple) 2px;
     border-radius: 4px;
     padding: 4rem;
+}
+
+#timelineMargin {
+    margin-top: 3rem;
 }
 
 
@@ -489,6 +497,7 @@ div {
 
 /*End My Skills */
 /*My Work*/
+
 .imgContainer {
     display: flex;
     justify-content: center;
