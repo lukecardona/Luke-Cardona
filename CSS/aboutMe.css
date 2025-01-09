@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --bluePrim: #548CFF;
     --greenPrim: #93FFD8;
@@ -39,25 +43,71 @@
 .card {
     content: "";
     width: 100%;
-    height: auto;
+    height: 2lh;
     margin: 1em;
     padding: 0.25em;
     border-radius: 5px;
-    border: 1px solid var(--borderColor);
+    border: 1px solid var(--light-purple);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom right, var(--light-purple), #548CFF, var(--greenPrim));
-    box-shadow: 2px 2px 5px #0ab1ff;
+    box-shadow: 2px 2px 5px var(--light-purple);
     font-family: "Permanent Marker", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--light-purple);
+    transition: all 0.25s ease-in;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
 }
 
 .card:hover {
-    box-shadow: 4px 4px 5px #0ab1ff;
+    box-shadow: 4px 4px 5px var(--dark-purple);
     cursor: pointer;
+    color: var(--nav-color);
+}
+
+.card:before {
+    transition: 0.4s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0%;
+    opacity: 0;
+    content: "";
+    background-color: var(--light-purple);
+    border: var(--light-purples) solid 1px;
+    z-index: 1;
+}
+
+.card:hover:before {
+    border: var(--light-purples) solid 1px;
+    transition: 0.4s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+#cardArea{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#cardContainer{
+    width:  80%;
+    margin: 0;
+    padding: 0;
+}
+
+.cardRow{
+    width: 100%;
 }
 
 #flippedCard {
@@ -100,10 +150,29 @@
 }
 
 .shown {
-    background-image: linear-gradient(to bottom right, #fd0800, #d38c20, #eba30a);
-    box-shadow: 2px 2px 5px #ecb70a;
+    background-color: var(--light-purple);
+    color: var(--nav-color);
+    border: 1px solid var(--dark-purple);
+    box-shadow: 2px 2px 5px var(--dark-purple);
 }
 
 .shown:hover {
-    box-shadow: 4px 4px 5px #ecb70a;
+    box-shadow: 2px 2px 10px var(--dark-purple);
+    z-index: 1100;
+}
+
+#randomContainer{
+    border: solid var(--light-purple) 2px;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+#randomContainer h3 {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    color: var(--light-purple);
+}
+
+#randomFactTitle {
+    margin-top: 0;
 }
