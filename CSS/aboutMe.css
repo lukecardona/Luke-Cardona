@@ -20,6 +20,10 @@
     /* --borderColor: rgba(121, 0, 255, 0.5); */
 }
 
+#myText {
+    transition: color ease;
+}
+
 .fullPage {
     width: 100%
 }
@@ -44,7 +48,7 @@
     content: "";
     width: 100%;
     height: 2lh;
-    margin: 1em;
+    margin: 1rem;
     padding: 0.25em;
     border-radius: 5px;
     border: 1px solid var(--light-purple);
@@ -63,6 +67,8 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
+    flex: 1 1 10%;
+    /* 4 items per row (approx 25% minus spacing) */
 }
 
 .card:hover {
@@ -94,20 +100,24 @@
     z-index: -1;
 }
 
-#cardArea{
+#cardArea {
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-#cardContainer{
-    width:  80%;
+#cardContainer {
+    width: 80%;
     margin: 0;
     padding: 0;
+
 }
 
-.cardRow{
-    width: 100%;
+.cardRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 #flippedCard {
@@ -161,7 +171,7 @@
     z-index: 1100;
 }
 
-#randomContainer{
+#randomContainer {
     border: solid var(--light-purple) 2px;
     border-radius: 4px;
     padding: 2rem;
@@ -175,4 +185,64 @@
 
 #randomFactTitle {
     margin-top: 0;
+}
+
+@media(max-width:1300px) {
+    #cardContainer {
+        width: 90%;
+    }
+}
+
+
+@media(max-width:992px) {
+    .card {
+        font-size: 1rem;
+        flex: 1 1 17%;
+        margin: 5px;
+    }
+}
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    .card {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        flex: 1 1 45%;
+    }
+
+    .cardRow {
+        width: 100%;
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .card {
+        font-size: 0.5rem;
+    }
+
+    .sticky {
+        width: 30%;
+    }
+
+    #rightColumn {
+        width: 70%;
+    }
+
+    #leftColumn {
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    #contactMe {
+        padding-left: 5px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    .skillItem {
+        font-size: 0.4rem;
+    }
 }

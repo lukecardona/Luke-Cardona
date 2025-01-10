@@ -143,6 +143,11 @@ div {
     display: flex;
 }
 
+.noPadMar {
+    padding: 0;
+    margin: 0;
+}
+
 .special-background-text {
     color: #B2B1B9;
     font-weight: 500;
@@ -154,7 +159,7 @@ div {
 .nameAnimation:hover {
     cursor: pointer;
     color: var(--red);
-
+    transition: none;
 }
 
 .vertical {
@@ -177,6 +182,8 @@ div {
 
 .row {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .divideEven {
@@ -385,7 +392,7 @@ div {
 .textanimation span {
     color: #FF5F40;
     /* font-size: 1.75rem; */
-    transition: all;
+    transition: color;
 }
 
 .aboutMeText span:nth-child(146) {
@@ -407,6 +414,7 @@ div {
 
 #whatElseHeading {
     margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 #aboutMeImages {
@@ -433,6 +441,7 @@ div {
     width: 60%;
     border: var(--dark-purple) solid 3px;
     transition: all 0.25s ease-in;
+    margin-bottom: 2em;
 }
 
 #getFactButton:hover {
@@ -470,6 +479,13 @@ div {
 
 .newSkillsRow {
     margin: 3rem
+}
+
+.bar-text {
+    margin: 0.25rem 0;
+    margin-left: 0.4rem;
+    text-align: left;
+    width: 88%;
 }
 
 
@@ -702,6 +718,12 @@ button[type="submit"]:hover {
 }
 
 /*media respoviness */
+@media(max-width:1600px) {
+
+    h2 {
+        font-size: 4.75rem;
+    }
+}
 
 /*BootStrap-XL +1100 px*/
 @media(max-width:1300px) {
@@ -745,7 +767,11 @@ button[type="submit"]:hover {
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 4rem;
+    }
+
+    #whatElseHeading {
+        margin-top: 4rem;
     }
 }
 
@@ -843,7 +869,8 @@ button[type="submit"]:hover {
 
     #getFactButton {
         width: 60%;
-        font-size: 30px;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
     }
 
     .newSkillsRow.progress {
@@ -887,6 +914,10 @@ button[type="submit"]:hover {
         text-align: left;
         margin-bottom: 0;
     }
+
+    #whatElseHeading {
+        margin-top: 3rem;
+    }
 }
 
 /*Bootstrap md - 768 px*/
@@ -923,6 +954,10 @@ button[type="submit"]:hover {
     #myButton,
     #formButton {
         font-size: 1.5rem;
+    }
+
+    #whatElseHeading {
+        margin-top: 2rem;
     }
 }
 
@@ -987,6 +1022,10 @@ button[type="submit"]:hover {
     #myButton,
     #formButton {
         font-size: 1.25rem;
+    }
+
+    #whatElseHeading {
+        margin-top: 1.5rem;
     }
 }
 
